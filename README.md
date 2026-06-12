@@ -42,6 +42,9 @@ This implementation makes available the following quantum safe algorithms:
 
 ### Signature algorithms
 
+- **FAEST**:`faest128s`, `faest128f`, `faest192s`, `faest192f`, `faest256s`, `faest256f`
+- **HAWK**:`hawk512`, `hawk1024`
+- **QR-UOV-round2**:`qruov1q7l10v740m100`, `qruov3q7l10v1100m140`, `qruov5q7l10v1490m190`
 - **ML-DSA**:`mldsa44`, `p256_mldsa44`, `rsa3072_mldsa44`, `mldsa65`, `p384_mldsa65`, `mldsa87`, `p521_mldsa87`
 - **Falcon**:`falcon512`, `p256_falcon512`, `rsa3072_falcon512`, `falconpadded512`, `p256_falconpadded512`, `rsa3072_falconpadded512`, `falcon1024`, `p521_falcon1024`, `falconpadded1024`, `p521_falconpadded1024`
 - **MAYO**:`mayo1`, `p256_mayo1`, `mayo2`, `p256_mayo2`, `mayo3`, `p384_mayo3`, `mayo5`, `p521_mayo5`

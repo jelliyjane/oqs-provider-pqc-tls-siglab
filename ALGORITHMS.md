@@ -68,6 +68,17 @@ The following list of algorithms may change when loading oqsprovider (version >=
 | x448_bikel3 | 65045 | Yes | OQS_CODEPOINT_X448_BIKEL3 |
 | bikel5 | 65046 | Yes | OQS_CODEPOINT_BIKEL5 |
 | p521_bikel5 | 65047 | Yes | OQS_CODEPOINT_P521_BIKEL5 |
+| faest128s | 0xff7b |Yes| OQS_CODEPOINT_FAEST128S
+| faest128f | 0xff81 |Yes| OQS_CODEPOINT_FAEST128F
+| faest192s | 0xff7c |Yes| OQS_CODEPOINT_FAEST192S
+| faest192f | 0xff82 |Yes| OQS_CODEPOINT_FAEST192F
+| faest256s | 0xff7d |Yes| OQS_CODEPOINT_FAEST256S
+| faest256f | 0xff83 |Yes| OQS_CODEPOINT_FAEST256F
+| hawk512 | 0xff7e |Yes| OQS_CODEPOINT_HAWK512
+| hawk1024 | 0xff7f |Yes| OQS_CODEPOINT_HAWK1024
+| qruov1q7l10v740m100 | 0xff80 |Yes| OQS_CODEPOINT_QRUOV1Q7L10V740M100
+| qruov3q7l10v1100m140 | 0xff84 |Yes| OQS_CODEPOINT_QRUOV3Q7L10V1100M140
+| qruov5q7l10v1490m190 | 0xff85 |Yes| OQS_CODEPOINT_QRUOV5Q7L10V1490M190
 | mldsa44 | 0x0904 |Yes| OQS_CODEPOINT_MLDSA44
 | p256_mldsa44 | 0xff06 |Yes| OQS_CODEPOINT_P256_MLDSA44
 | rsa3072_mldsa44 | 0xff07 |Yes| OQS_CODEPOINT_RSA3072_MLDSA44
@@ -222,6 +233,17 @@ discussed in https://github.com/open-quantum-safe/oqs-provider/issues/351.
 <!--- OQS_TEMPLATE_FRAGMENT_OIDS_START -->
 |Algorithm name |    default OID    | enabled | environment variable |
 |---------------|:-----------------:|:-------:|----------------------|
+| faest128s | 1.3.9999.20.1.1 |Yes| OQS_OID_FAEST128S
+| faest128f | 1.3.9999.20.1.2 |Yes| OQS_OID_FAEST128F
+| faest192s | 1.3.9999.20.2.1 |Yes| OQS_OID_FAEST192S
+| faest192f | 1.3.9999.20.2.2 |Yes| OQS_OID_FAEST192F
+| faest256s | 1.3.9999.20.3.1 |Yes| OQS_OID_FAEST256S
+| faest256f | 1.3.9999.20.3.2 |Yes| OQS_OID_FAEST256F
+| hawk512 | 1.3.9999.21.1.1 |Yes| OQS_OID_HAWK512
+| hawk1024 | 1.3.9999.21.2.1 |Yes| OQS_OID_HAWK1024
+| qruov1q7l10v740m100 | 1.3.9999.22.1.1 |Yes| OQS_OID_QRUOV1Q7L10V740M100
+| qruov3q7l10v1100m140 | 1.3.9999.22.3.1 |Yes| OQS_OID_QRUOV3Q7L10V1100M140
+| qruov5q7l10v1490m190 | 1.3.9999.22.5.1 |Yes| OQS_OID_QRUOV5Q7L10V1490M190
 | mldsa44 | 2.16.840.1.101.3.4.3.17 |Yes| OQS_OID_MLDSA44
 | p256_mldsa44 | 1.3.9999.7.5 |Yes| OQS_OID_P256_MLDSA44
 | rsa3072_mldsa44 | 1.3.9999.7.6 |Yes| OQS_OID_RSA3072_MLDSA44
@@ -407,4 +429,3 @@ If [OQS_KEM_ENCODERS](CONFIGURE.md#OQS_KEM_ENCODERS) is enabled the following li
 | bikel5 | NULL | OQS_OID_BIKEL5
 | p521_bikel5 | NULL | OQS_OID_P521_BIKEL5
 <!--- OQS_TEMPLATE_FRAGMENT_OIDS_END -->
-

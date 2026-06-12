@@ -606,373 +606,410 @@ done:
 // OQS provider uses NIDs generated at load time as EVP_type identifiers
 // so initially this must be 0 and set to a real value by OBJ_sn2nid later
 ///// OQS_TEMPLATE_FRAGMENT_ENCODER_DEFINES_START
-#define efrodo640aes_evp_type 0
-#define efrodo640aes_input_type "efrodo640aes"
-#define efrodo640aes_pem_type "efrodo640aes"
+# define efrodo640aes_evp_type     0
+# define efrodo640aes_input_type    "efrodo640aes"
+# define efrodo640aes_pem_type      "efrodo640aes"
 
-#define p256_efrodo640aes_evp_type 0
-#define p256_efrodo640aes_input_type "p256_efrodo640aes"
-#define p256_efrodo640aes_pem_type "p256_efrodo640aes"
-#define x25519_efrodo640aes_evp_type 0
-#define x25519_efrodo640aes_input_type "x25519_efrodo640aes"
-#define x25519_efrodo640aes_pem_type "x25519_efrodo640aes"
-#define efrodo640shake_evp_type 0
-#define efrodo640shake_input_type "efrodo640shake"
-#define efrodo640shake_pem_type "efrodo640shake"
+# define p256_efrodo640aes_evp_type     0
+# define p256_efrodo640aes_input_type    "p256_efrodo640aes"
+# define p256_efrodo640aes_pem_type      "p256_efrodo640aes"
+# define x25519_efrodo640aes_evp_type     0
+# define x25519_efrodo640aes_input_type    "x25519_efrodo640aes"
+# define x25519_efrodo640aes_pem_type      "x25519_efrodo640aes"
+# define efrodo640shake_evp_type     0
+# define efrodo640shake_input_type    "efrodo640shake"
+# define efrodo640shake_pem_type      "efrodo640shake"
 
-#define p256_efrodo640shake_evp_type 0
-#define p256_efrodo640shake_input_type "p256_efrodo640shake"
-#define p256_efrodo640shake_pem_type "p256_efrodo640shake"
-#define x25519_efrodo640shake_evp_type 0
-#define x25519_efrodo640shake_input_type "x25519_efrodo640shake"
-#define x25519_efrodo640shake_pem_type "x25519_efrodo640shake"
-#define efrodo976aes_evp_type 0
-#define efrodo976aes_input_type "efrodo976aes"
-#define efrodo976aes_pem_type "efrodo976aes"
+# define p256_efrodo640shake_evp_type     0
+# define p256_efrodo640shake_input_type    "p256_efrodo640shake"
+# define p256_efrodo640shake_pem_type      "p256_efrodo640shake"
+# define x25519_efrodo640shake_evp_type     0
+# define x25519_efrodo640shake_input_type    "x25519_efrodo640shake"
+# define x25519_efrodo640shake_pem_type      "x25519_efrodo640shake"
+# define efrodo976aes_evp_type     0
+# define efrodo976aes_input_type    "efrodo976aes"
+# define efrodo976aes_pem_type      "efrodo976aes"
 
-#define p384_efrodo976aes_evp_type 0
-#define p384_efrodo976aes_input_type "p384_efrodo976aes"
-#define p384_efrodo976aes_pem_type "p384_efrodo976aes"
-#define x448_efrodo976aes_evp_type 0
-#define x448_efrodo976aes_input_type "x448_efrodo976aes"
-#define x448_efrodo976aes_pem_type "x448_efrodo976aes"
-#define efrodo976shake_evp_type 0
-#define efrodo976shake_input_type "efrodo976shake"
-#define efrodo976shake_pem_type "efrodo976shake"
+# define p384_efrodo976aes_evp_type     0
+# define p384_efrodo976aes_input_type    "p384_efrodo976aes"
+# define p384_efrodo976aes_pem_type      "p384_efrodo976aes"
+# define x448_efrodo976aes_evp_type     0
+# define x448_efrodo976aes_input_type    "x448_efrodo976aes"
+# define x448_efrodo976aes_pem_type      "x448_efrodo976aes"
+# define efrodo976shake_evp_type     0
+# define efrodo976shake_input_type    "efrodo976shake"
+# define efrodo976shake_pem_type      "efrodo976shake"
 
-#define p384_efrodo976shake_evp_type 0
-#define p384_efrodo976shake_input_type "p384_efrodo976shake"
-#define p384_efrodo976shake_pem_type "p384_efrodo976shake"
-#define x448_efrodo976shake_evp_type 0
-#define x448_efrodo976shake_input_type "x448_efrodo976shake"
-#define x448_efrodo976shake_pem_type "x448_efrodo976shake"
-#define efrodo1344aes_evp_type 0
-#define efrodo1344aes_input_type "efrodo1344aes"
-#define efrodo1344aes_pem_type "efrodo1344aes"
+# define p384_efrodo976shake_evp_type     0
+# define p384_efrodo976shake_input_type    "p384_efrodo976shake"
+# define p384_efrodo976shake_pem_type      "p384_efrodo976shake"
+# define x448_efrodo976shake_evp_type     0
+# define x448_efrodo976shake_input_type    "x448_efrodo976shake"
+# define x448_efrodo976shake_pem_type      "x448_efrodo976shake"
+# define efrodo1344aes_evp_type     0
+# define efrodo1344aes_input_type    "efrodo1344aes"
+# define efrodo1344aes_pem_type      "efrodo1344aes"
 
-#define p521_efrodo1344aes_evp_type 0
-#define p521_efrodo1344aes_input_type "p521_efrodo1344aes"
-#define p521_efrodo1344aes_pem_type "p521_efrodo1344aes"
-#define efrodo1344shake_evp_type 0
-#define efrodo1344shake_input_type "efrodo1344shake"
-#define efrodo1344shake_pem_type "efrodo1344shake"
+# define p521_efrodo1344aes_evp_type     0
+# define p521_efrodo1344aes_input_type    "p521_efrodo1344aes"
+# define p521_efrodo1344aes_pem_type      "p521_efrodo1344aes"
+# define efrodo1344shake_evp_type     0
+# define efrodo1344shake_input_type    "efrodo1344shake"
+# define efrodo1344shake_pem_type      "efrodo1344shake"
 
-#define p521_efrodo1344shake_evp_type 0
-#define p521_efrodo1344shake_input_type "p521_efrodo1344shake"
-#define p521_efrodo1344shake_pem_type "p521_efrodo1344shake"
-#define frodo640aes_evp_type 0
-#define frodo640aes_input_type "frodo640aes"
-#define frodo640aes_pem_type "frodo640aes"
+# define p521_efrodo1344shake_evp_type     0
+# define p521_efrodo1344shake_input_type    "p521_efrodo1344shake"
+# define p521_efrodo1344shake_pem_type      "p521_efrodo1344shake"
+# define frodo640aes_evp_type     0
+# define frodo640aes_input_type    "frodo640aes"
+# define frodo640aes_pem_type      "frodo640aes"
 
-#define p256_frodo640aes_evp_type 0
-#define p256_frodo640aes_input_type "p256_frodo640aes"
-#define p256_frodo640aes_pem_type "p256_frodo640aes"
-#define x25519_frodo640aes_evp_type 0
-#define x25519_frodo640aes_input_type "x25519_frodo640aes"
-#define x25519_frodo640aes_pem_type "x25519_frodo640aes"
-#define frodo640shake_evp_type 0
-#define frodo640shake_input_type "frodo640shake"
-#define frodo640shake_pem_type "frodo640shake"
+# define p256_frodo640aes_evp_type     0
+# define p256_frodo640aes_input_type    "p256_frodo640aes"
+# define p256_frodo640aes_pem_type      "p256_frodo640aes"
+# define x25519_frodo640aes_evp_type     0
+# define x25519_frodo640aes_input_type    "x25519_frodo640aes"
+# define x25519_frodo640aes_pem_type      "x25519_frodo640aes"
+# define frodo640shake_evp_type     0
+# define frodo640shake_input_type    "frodo640shake"
+# define frodo640shake_pem_type      "frodo640shake"
 
-#define p256_frodo640shake_evp_type 0
-#define p256_frodo640shake_input_type "p256_frodo640shake"
-#define p256_frodo640shake_pem_type "p256_frodo640shake"
-#define x25519_frodo640shake_evp_type 0
-#define x25519_frodo640shake_input_type "x25519_frodo640shake"
-#define x25519_frodo640shake_pem_type "x25519_frodo640shake"
-#define frodo976aes_evp_type 0
-#define frodo976aes_input_type "frodo976aes"
-#define frodo976aes_pem_type "frodo976aes"
+# define p256_frodo640shake_evp_type     0
+# define p256_frodo640shake_input_type    "p256_frodo640shake"
+# define p256_frodo640shake_pem_type      "p256_frodo640shake"
+# define x25519_frodo640shake_evp_type     0
+# define x25519_frodo640shake_input_type    "x25519_frodo640shake"
+# define x25519_frodo640shake_pem_type      "x25519_frodo640shake"
+# define frodo976aes_evp_type     0
+# define frodo976aes_input_type    "frodo976aes"
+# define frodo976aes_pem_type      "frodo976aes"
 
-#define p384_frodo976aes_evp_type 0
-#define p384_frodo976aes_input_type "p384_frodo976aes"
-#define p384_frodo976aes_pem_type "p384_frodo976aes"
-#define x448_frodo976aes_evp_type 0
-#define x448_frodo976aes_input_type "x448_frodo976aes"
-#define x448_frodo976aes_pem_type "x448_frodo976aes"
-#define frodo976shake_evp_type 0
-#define frodo976shake_input_type "frodo976shake"
-#define frodo976shake_pem_type "frodo976shake"
+# define p384_frodo976aes_evp_type     0
+# define p384_frodo976aes_input_type    "p384_frodo976aes"
+# define p384_frodo976aes_pem_type      "p384_frodo976aes"
+# define x448_frodo976aes_evp_type     0
+# define x448_frodo976aes_input_type    "x448_frodo976aes"
+# define x448_frodo976aes_pem_type      "x448_frodo976aes"
+# define frodo976shake_evp_type     0
+# define frodo976shake_input_type    "frodo976shake"
+# define frodo976shake_pem_type      "frodo976shake"
 
-#define p384_frodo976shake_evp_type 0
-#define p384_frodo976shake_input_type "p384_frodo976shake"
-#define p384_frodo976shake_pem_type "p384_frodo976shake"
-#define x448_frodo976shake_evp_type 0
-#define x448_frodo976shake_input_type "x448_frodo976shake"
-#define x448_frodo976shake_pem_type "x448_frodo976shake"
-#define frodo1344aes_evp_type 0
-#define frodo1344aes_input_type "frodo1344aes"
-#define frodo1344aes_pem_type "frodo1344aes"
+# define p384_frodo976shake_evp_type     0
+# define p384_frodo976shake_input_type    "p384_frodo976shake"
+# define p384_frodo976shake_pem_type      "p384_frodo976shake"
+# define x448_frodo976shake_evp_type     0
+# define x448_frodo976shake_input_type    "x448_frodo976shake"
+# define x448_frodo976shake_pem_type      "x448_frodo976shake"
+# define frodo1344aes_evp_type     0
+# define frodo1344aes_input_type    "frodo1344aes"
+# define frodo1344aes_pem_type      "frodo1344aes"
 
-#define p521_frodo1344aes_evp_type 0
-#define p521_frodo1344aes_input_type "p521_frodo1344aes"
-#define p521_frodo1344aes_pem_type "p521_frodo1344aes"
-#define frodo1344shake_evp_type 0
-#define frodo1344shake_input_type "frodo1344shake"
-#define frodo1344shake_pem_type "frodo1344shake"
+# define p521_frodo1344aes_evp_type     0
+# define p521_frodo1344aes_input_type    "p521_frodo1344aes"
+# define p521_frodo1344aes_pem_type      "p521_frodo1344aes"
+# define frodo1344shake_evp_type     0
+# define frodo1344shake_input_type    "frodo1344shake"
+# define frodo1344shake_pem_type      "frodo1344shake"
 
-#define p521_frodo1344shake_evp_type 0
-#define p521_frodo1344shake_input_type "p521_frodo1344shake"
-#define p521_frodo1344shake_pem_type "p521_frodo1344shake"
-#define mlkem512_evp_type 0
-#define mlkem512_input_type "mlkem512"
-#define mlkem512_pem_type "mlkem512"
+# define p521_frodo1344shake_evp_type     0
+# define p521_frodo1344shake_input_type    "p521_frodo1344shake"
+# define p521_frodo1344shake_pem_type      "p521_frodo1344shake"
+# define mlkem512_evp_type     0
+# define mlkem512_input_type    "mlkem512"
+# define mlkem512_pem_type      "mlkem512"
 
-#define p256_mlkem512_evp_type 0
-#define p256_mlkem512_input_type "p256_mlkem512"
-#define p256_mlkem512_pem_type "p256_mlkem512"
-#define x25519_mlkem512_evp_type 0
-#define x25519_mlkem512_input_type "x25519_mlkem512"
-#define x25519_mlkem512_pem_type "x25519_mlkem512"
-#define bp256_mlkem512_evp_type 0
-#define bp256_mlkem512_input_type "bp256_mlkem512"
-#define bp256_mlkem512_pem_type "bp256_mlkem512"
-#define mlkem768_evp_type 0
-#define mlkem768_input_type "mlkem768"
-#define mlkem768_pem_type "mlkem768"
+# define p256_mlkem512_evp_type     0
+# define p256_mlkem512_input_type    "p256_mlkem512"
+# define p256_mlkem512_pem_type      "p256_mlkem512"
+# define x25519_mlkem512_evp_type     0
+# define x25519_mlkem512_input_type    "x25519_mlkem512"
+# define x25519_mlkem512_pem_type      "x25519_mlkem512"
+# define bp256_mlkem512_evp_type     0
+# define bp256_mlkem512_input_type    "bp256_mlkem512"
+# define bp256_mlkem512_pem_type      "bp256_mlkem512"
+# define mlkem768_evp_type     0
+# define mlkem768_input_type    "mlkem768"
+# define mlkem768_pem_type      "mlkem768"
 
-#define p384_mlkem768_evp_type 0
-#define p384_mlkem768_input_type "p384_mlkem768"
-#define p384_mlkem768_pem_type "p384_mlkem768"
-#define x448_mlkem768_evp_type 0
-#define x448_mlkem768_input_type "x448_mlkem768"
-#define x448_mlkem768_pem_type "x448_mlkem768"
-#define bp384_mlkem768_evp_type 0
-#define bp384_mlkem768_input_type "bp384_mlkem768"
-#define bp384_mlkem768_pem_type "bp384_mlkem768"
-#define X25519MLKEM768_evp_type 0
-#define X25519MLKEM768_input_type "X25519MLKEM768"
-#define X25519MLKEM768_pem_type "X25519MLKEM768"
-#define SecP256r1MLKEM768_evp_type 0
-#define SecP256r1MLKEM768_input_type "SecP256r1MLKEM768"
-#define SecP256r1MLKEM768_pem_type "SecP256r1MLKEM768"
-#define mlkem1024_evp_type 0
-#define mlkem1024_input_type "mlkem1024"
-#define mlkem1024_pem_type "mlkem1024"
+# define p384_mlkem768_evp_type     0
+# define p384_mlkem768_input_type    "p384_mlkem768"
+# define p384_mlkem768_pem_type      "p384_mlkem768"
+# define x448_mlkem768_evp_type     0
+# define x448_mlkem768_input_type    "x448_mlkem768"
+# define x448_mlkem768_pem_type      "x448_mlkem768"
+# define bp384_mlkem768_evp_type     0
+# define bp384_mlkem768_input_type    "bp384_mlkem768"
+# define bp384_mlkem768_pem_type      "bp384_mlkem768"
+# define X25519MLKEM768_evp_type     0
+# define X25519MLKEM768_input_type    "X25519MLKEM768"
+# define X25519MLKEM768_pem_type      "X25519MLKEM768"
+# define SecP256r1MLKEM768_evp_type     0
+# define SecP256r1MLKEM768_input_type    "SecP256r1MLKEM768"
+# define SecP256r1MLKEM768_pem_type      "SecP256r1MLKEM768"
+# define mlkem1024_evp_type     0
+# define mlkem1024_input_type    "mlkem1024"
+# define mlkem1024_pem_type      "mlkem1024"
 
-#define p521_mlkem1024_evp_type 0
-#define p521_mlkem1024_input_type "p521_mlkem1024"
-#define p521_mlkem1024_pem_type "p521_mlkem1024"
-#define SecP384r1MLKEM1024_evp_type 0
-#define SecP384r1MLKEM1024_input_type "SecP384r1MLKEM1024"
-#define SecP384r1MLKEM1024_pem_type "SecP384r1MLKEM1024"
-#define bp512_mlkem1024_evp_type 0
-#define bp512_mlkem1024_input_type "bp512_mlkem1024"
-#define bp512_mlkem1024_pem_type "bp512_mlkem1024"
-#define bikel1_evp_type 0
-#define bikel1_input_type "bikel1"
-#define bikel1_pem_type "bikel1"
+# define p521_mlkem1024_evp_type     0
+# define p521_mlkem1024_input_type    "p521_mlkem1024"
+# define p521_mlkem1024_pem_type      "p521_mlkem1024"
+# define SecP384r1MLKEM1024_evp_type     0
+# define SecP384r1MLKEM1024_input_type    "SecP384r1MLKEM1024"
+# define SecP384r1MLKEM1024_pem_type      "SecP384r1MLKEM1024"
+# define bp512_mlkem1024_evp_type     0
+# define bp512_mlkem1024_input_type    "bp512_mlkem1024"
+# define bp512_mlkem1024_pem_type      "bp512_mlkem1024"
+# define bikel1_evp_type     0
+# define bikel1_input_type    "bikel1"
+# define bikel1_pem_type      "bikel1"
 
-#define p256_bikel1_evp_type 0
-#define p256_bikel1_input_type "p256_bikel1"
-#define p256_bikel1_pem_type "p256_bikel1"
-#define x25519_bikel1_evp_type 0
-#define x25519_bikel1_input_type "x25519_bikel1"
-#define x25519_bikel1_pem_type "x25519_bikel1"
-#define bikel3_evp_type 0
-#define bikel3_input_type "bikel3"
-#define bikel3_pem_type "bikel3"
+# define p256_bikel1_evp_type     0
+# define p256_bikel1_input_type    "p256_bikel1"
+# define p256_bikel1_pem_type      "p256_bikel1"
+# define x25519_bikel1_evp_type     0
+# define x25519_bikel1_input_type    "x25519_bikel1"
+# define x25519_bikel1_pem_type      "x25519_bikel1"
+# define bikel3_evp_type     0
+# define bikel3_input_type    "bikel3"
+# define bikel3_pem_type      "bikel3"
 
-#define p384_bikel3_evp_type 0
-#define p384_bikel3_input_type "p384_bikel3"
-#define p384_bikel3_pem_type "p384_bikel3"
-#define x448_bikel3_evp_type 0
-#define x448_bikel3_input_type "x448_bikel3"
-#define x448_bikel3_pem_type "x448_bikel3"
-#define bikel5_evp_type 0
-#define bikel5_input_type "bikel5"
-#define bikel5_pem_type "bikel5"
+# define p384_bikel3_evp_type     0
+# define p384_bikel3_input_type    "p384_bikel3"
+# define p384_bikel3_pem_type      "p384_bikel3"
+# define x448_bikel3_evp_type     0
+# define x448_bikel3_input_type    "x448_bikel3"
+# define x448_bikel3_pem_type      "x448_bikel3"
+# define bikel5_evp_type     0
+# define bikel5_input_type    "bikel5"
+# define bikel5_pem_type      "bikel5"
 
-#define p521_bikel5_evp_type 0
-#define p521_bikel5_input_type "p521_bikel5"
-#define p521_bikel5_pem_type "p521_bikel5"
+# define p521_bikel5_evp_type     0
+# define p521_bikel5_input_type    "p521_bikel5"
+# define p521_bikel5_pem_type      "p521_bikel5"
 
-#define mldsa44_evp_type 0
-#define mldsa44_input_type "mldsa44"
-#define mldsa44_pem_type "mldsa44"
-#define p256_mldsa44_evp_type 0
-#define p256_mldsa44_input_type "p256_mldsa44"
-#define p256_mldsa44_pem_type "p256_mldsa44"
-#define rsa3072_mldsa44_evp_type 0
-#define rsa3072_mldsa44_input_type "rsa3072_mldsa44"
-#define rsa3072_mldsa44_pem_type "rsa3072_mldsa44"
-#define mldsa65_evp_type 0
-#define mldsa65_input_type "mldsa65"
-#define mldsa65_pem_type "mldsa65"
-#define p384_mldsa65_evp_type 0
-#define p384_mldsa65_input_type "p384_mldsa65"
-#define p384_mldsa65_pem_type "p384_mldsa65"
-#define mldsa87_evp_type 0
-#define mldsa87_input_type "mldsa87"
-#define mldsa87_pem_type "mldsa87"
-#define p521_mldsa87_evp_type 0
-#define p521_mldsa87_input_type "p521_mldsa87"
-#define p521_mldsa87_pem_type "p521_mldsa87"
-#define falcon512_evp_type 0
-#define falcon512_input_type "falcon512"
-#define falcon512_pem_type "falcon512"
-#define p256_falcon512_evp_type 0
-#define p256_falcon512_input_type "p256_falcon512"
-#define p256_falcon512_pem_type "p256_falcon512"
-#define rsa3072_falcon512_evp_type 0
-#define rsa3072_falcon512_input_type "rsa3072_falcon512"
-#define rsa3072_falcon512_pem_type "rsa3072_falcon512"
-#define falconpadded512_evp_type 0
-#define falconpadded512_input_type "falconpadded512"
-#define falconpadded512_pem_type "falconpadded512"
-#define p256_falconpadded512_evp_type 0
-#define p256_falconpadded512_input_type "p256_falconpadded512"
-#define p256_falconpadded512_pem_type "p256_falconpadded512"
-#define rsa3072_falconpadded512_evp_type 0
-#define rsa3072_falconpadded512_input_type "rsa3072_falconpadded512"
-#define rsa3072_falconpadded512_pem_type "rsa3072_falconpadded512"
-#define falcon1024_evp_type 0
-#define falcon1024_input_type "falcon1024"
-#define falcon1024_pem_type "falcon1024"
-#define p521_falcon1024_evp_type 0
-#define p521_falcon1024_input_type "p521_falcon1024"
-#define p521_falcon1024_pem_type "p521_falcon1024"
-#define falconpadded1024_evp_type 0
-#define falconpadded1024_input_type "falconpadded1024"
-#define falconpadded1024_pem_type "falconpadded1024"
-#define p521_falconpadded1024_evp_type 0
-#define p521_falconpadded1024_input_type "p521_falconpadded1024"
-#define p521_falconpadded1024_pem_type "p521_falconpadded1024"
-#define mayo1_evp_type 0
-#define mayo1_input_type "mayo1"
-#define mayo1_pem_type "mayo1"
-#define p256_mayo1_evp_type 0
-#define p256_mayo1_input_type "p256_mayo1"
-#define p256_mayo1_pem_type "p256_mayo1"
-#define mayo2_evp_type 0
-#define mayo2_input_type "mayo2"
-#define mayo2_pem_type "mayo2"
-#define p256_mayo2_evp_type 0
-#define p256_mayo2_input_type "p256_mayo2"
-#define p256_mayo2_pem_type "p256_mayo2"
-#define mayo3_evp_type 0
-#define mayo3_input_type "mayo3"
-#define mayo3_pem_type "mayo3"
-#define p384_mayo3_evp_type 0
-#define p384_mayo3_input_type "p384_mayo3"
-#define p384_mayo3_pem_type "p384_mayo3"
-#define mayo5_evp_type 0
-#define mayo5_input_type "mayo5"
-#define mayo5_pem_type "mayo5"
-#define p521_mayo5_evp_type 0
-#define p521_mayo5_input_type "p521_mayo5"
-#define p521_mayo5_pem_type "p521_mayo5"
-#define CROSSrsdp128balanced_evp_type 0
-#define CROSSrsdp128balanced_input_type "CROSSrsdp128balanced"
-#define CROSSrsdp128balanced_pem_type "CROSSrsdp128balanced"
-#define OV_Is_pkc_evp_type 0
-#define OV_Is_pkc_input_type "OV_Is_pkc"
-#define OV_Is_pkc_pem_type "OV_Is_pkc"
-#define p256_OV_Is_pkc_evp_type 0
-#define p256_OV_Is_pkc_input_type "p256_OV_Is_pkc"
-#define p256_OV_Is_pkc_pem_type "p256_OV_Is_pkc"
-#define OV_Ip_pkc_evp_type 0
-#define OV_Ip_pkc_input_type "OV_Ip_pkc"
-#define OV_Ip_pkc_pem_type "OV_Ip_pkc"
-#define p256_OV_Ip_pkc_evp_type 0
-#define p256_OV_Ip_pkc_input_type "p256_OV_Ip_pkc"
-#define p256_OV_Ip_pkc_pem_type "p256_OV_Ip_pkc"
-#define OV_Is_pkc_skc_evp_type 0
-#define OV_Is_pkc_skc_input_type "OV_Is_pkc_skc"
-#define OV_Is_pkc_skc_pem_type "OV_Is_pkc_skc"
-#define p256_OV_Is_pkc_skc_evp_type 0
-#define p256_OV_Is_pkc_skc_input_type "p256_OV_Is_pkc_skc"
-#define p256_OV_Is_pkc_skc_pem_type "p256_OV_Is_pkc_skc"
-#define OV_Ip_pkc_skc_evp_type 0
-#define OV_Ip_pkc_skc_input_type "OV_Ip_pkc_skc"
-#define OV_Ip_pkc_skc_pem_type "OV_Ip_pkc_skc"
-#define p256_OV_Ip_pkc_skc_evp_type 0
-#define p256_OV_Ip_pkc_skc_input_type "p256_OV_Ip_pkc_skc"
-#define p256_OV_Ip_pkc_skc_pem_type "p256_OV_Ip_pkc_skc"
-#define snova2454_evp_type 0
-#define snova2454_input_type "snova2454"
-#define snova2454_pem_type "snova2454"
-#define p256_snova2454_evp_type 0
-#define p256_snova2454_input_type "p256_snova2454"
-#define p256_snova2454_pem_type "p256_snova2454"
-#define snova2454esk_evp_type 0
-#define snova2454esk_input_type "snova2454esk"
-#define snova2454esk_pem_type "snova2454esk"
-#define p256_snova2454esk_evp_type 0
-#define p256_snova2454esk_input_type "p256_snova2454esk"
-#define p256_snova2454esk_pem_type "p256_snova2454esk"
-#define snova37172_evp_type 0
-#define snova37172_input_type "snova37172"
-#define snova37172_pem_type "snova37172"
-#define p256_snova37172_evp_type 0
-#define p256_snova37172_input_type "p256_snova37172"
-#define p256_snova37172_pem_type "p256_snova37172"
-#define snova2455_evp_type 0
-#define snova2455_input_type "snova2455"
-#define snova2455_pem_type "snova2455"
-#define p384_snova2455_evp_type 0
-#define p384_snova2455_input_type "p384_snova2455"
-#define p384_snova2455_pem_type "p384_snova2455"
-#define snova2965_evp_type 0
-#define snova2965_input_type "snova2965"
-#define snova2965_pem_type "snova2965"
-#define p521_snova2965_evp_type 0
-#define p521_snova2965_input_type "p521_snova2965"
-#define p521_snova2965_pem_type "p521_snova2965"
-#define slhdsasha2128s_evp_type 0
-#define slhdsasha2128s_input_type "slhdsasha2128s"
-#define slhdsasha2128s_pem_type "slhdsasha2128s"
-#define slhdsasha2128f_evp_type 0
-#define slhdsasha2128f_input_type "slhdsasha2128f"
-#define slhdsasha2128f_pem_type "slhdsasha2128f"
-#define slhdsasha2192s_evp_type 0
-#define slhdsasha2192s_input_type "slhdsasha2192s"
-#define slhdsasha2192s_pem_type "slhdsasha2192s"
-#define slhdsasha2192f_evp_type 0
-#define slhdsasha2192f_input_type "slhdsasha2192f"
-#define slhdsasha2192f_pem_type "slhdsasha2192f"
-#define slhdsasha2256s_evp_type 0
-#define slhdsasha2256s_input_type "slhdsasha2256s"
-#define slhdsasha2256s_pem_type "slhdsasha2256s"
-#define slhdsasha2256f_evp_type 0
-#define slhdsasha2256f_input_type "slhdsasha2256f"
-#define slhdsasha2256f_pem_type "slhdsasha2256f"
-#define slhdsashake128s_evp_type 0
-#define slhdsashake128s_input_type "slhdsashake128s"
-#define slhdsashake128s_pem_type "slhdsashake128s"
-#define slhdsashake128f_evp_type 0
-#define slhdsashake128f_input_type "slhdsashake128f"
-#define slhdsashake128f_pem_type "slhdsashake128f"
-#define slhdsashake192s_evp_type 0
-#define slhdsashake192s_input_type "slhdsashake192s"
-#define slhdsashake192s_pem_type "slhdsashake192s"
-#define slhdsashake192f_evp_type 0
-#define slhdsashake192f_input_type "slhdsashake192f"
-#define slhdsashake192f_pem_type "slhdsashake192f"
-#define slhdsashake256s_evp_type 0
-#define slhdsashake256s_input_type "slhdsashake256s"
-#define slhdsashake256s_pem_type "slhdsashake256s"
-#define slhdsashake256f_evp_type 0
-#define slhdsashake256f_input_type "slhdsashake256f"
-#define slhdsashake256f_pem_type "slhdsashake256f"
-#define mqom2cat1gf16fastr5_evp_type 0
-#define mqom2cat1gf16fastr5_input_type "mqom2cat1gf16fastr5"
-#define mqom2cat1gf16fastr5_pem_type "mqom2cat1gf16fastr5"
-#define p256_mqom2cat1gf16fastr5_evp_type 0
-#define p256_mqom2cat1gf16fastr5_input_type "p256_mqom2cat1gf16fastr5"
-#define p256_mqom2cat1gf16fastr5_pem_type "p256_mqom2cat1gf16fastr5"
-#define mqom2cat3gf16fastr5_evp_type 0
-#define mqom2cat3gf16fastr5_input_type "mqom2cat3gf16fastr5"
-#define mqom2cat3gf16fastr5_pem_type "mqom2cat3gf16fastr5"
-#define p384_mqom2cat3gf16fastr5_evp_type 0
-#define p384_mqom2cat3gf16fastr5_input_type "p384_mqom2cat3gf16fastr5"
-#define p384_mqom2cat3gf16fastr5_pem_type "p384_mqom2cat3gf16fastr5"
-#define mqom2cat5gf16fastr5_evp_type 0
-#define mqom2cat5gf16fastr5_input_type "mqom2cat5gf16fastr5"
-#define mqom2cat5gf16fastr5_pem_type "mqom2cat5gf16fastr5"
-#define p521_mqom2cat5gf16fastr5_evp_type 0
-#define p521_mqom2cat5gf16fastr5_input_type "p521_mqom2cat5gf16fastr5"
-#define p521_mqom2cat5gf16fastr5_pem_type "p521_mqom2cat5gf16fastr5"
+
+# define faest128s_evp_type       0
+# define faest128s_input_type      "faest128s"
+# define faest128s_pem_type        "faest128s"
+# define faest128f_evp_type       0
+# define faest128f_input_type      "faest128f"
+# define faest128f_pem_type        "faest128f"
+# define faest192s_evp_type       0
+# define faest192s_input_type      "faest192s"
+# define faest192s_pem_type        "faest192s"
+# define faest192f_evp_type       0
+# define faest192f_input_type      "faest192f"
+# define faest192f_pem_type        "faest192f"
+# define faest256s_evp_type       0
+# define faest256s_input_type      "faest256s"
+# define faest256s_pem_type        "faest256s"
+# define faest256f_evp_type       0
+# define faest256f_input_type      "faest256f"
+# define faest256f_pem_type        "faest256f"
+# define hawk512_evp_type       0
+# define hawk512_input_type      "hawk512"
+# define hawk512_pem_type        "hawk512"
+# define hawk1024_evp_type       0
+# define hawk1024_input_type      "hawk1024"
+# define hawk1024_pem_type        "hawk1024"
+# define qruov1q7l10v740m100_evp_type       0
+# define qruov1q7l10v740m100_input_type      "qruov1q7l10v740m100"
+# define qruov1q7l10v740m100_pem_type        "qruov1q7l10v740m100"
+# define qruov3q7l10v1100m140_evp_type       0
+# define qruov3q7l10v1100m140_input_type      "qruov3q7l10v1100m140"
+# define qruov3q7l10v1100m140_pem_type        "qruov3q7l10v1100m140"
+# define qruov5q7l10v1490m190_evp_type       0
+# define qruov5q7l10v1490m190_input_type      "qruov5q7l10v1490m190"
+# define qruov5q7l10v1490m190_pem_type        "qruov5q7l10v1490m190"
+# define sdithhypercubecat1gf256_evp_type       0
+# define sdithhypercubecat1gf256_input_type      "sdithhypercubecat1gf256"
+# define sdithhypercubecat1gf256_pem_type        "sdithhypercubecat1gf256"
+# define mldsa44_evp_type       0
+# define mldsa44_input_type      "mldsa44"
+# define mldsa44_pem_type        "mldsa44"
+# define p256_mldsa44_evp_type       0
+# define p256_mldsa44_input_type      "p256_mldsa44"
+# define p256_mldsa44_pem_type        "p256_mldsa44"
+# define rsa3072_mldsa44_evp_type       0
+# define rsa3072_mldsa44_input_type      "rsa3072_mldsa44"
+# define rsa3072_mldsa44_pem_type        "rsa3072_mldsa44"
+# define mldsa65_evp_type       0
+# define mldsa65_input_type      "mldsa65"
+# define mldsa65_pem_type        "mldsa65"
+# define p384_mldsa65_evp_type       0
+# define p384_mldsa65_input_type      "p384_mldsa65"
+# define p384_mldsa65_pem_type        "p384_mldsa65"
+# define mldsa87_evp_type       0
+# define mldsa87_input_type      "mldsa87"
+# define mldsa87_pem_type        "mldsa87"
+# define p521_mldsa87_evp_type       0
+# define p521_mldsa87_input_type      "p521_mldsa87"
+# define p521_mldsa87_pem_type        "p521_mldsa87"
+# define falcon512_evp_type       0
+# define falcon512_input_type      "falcon512"
+# define falcon512_pem_type        "falcon512"
+# define p256_falcon512_evp_type       0
+# define p256_falcon512_input_type      "p256_falcon512"
+# define p256_falcon512_pem_type        "p256_falcon512"
+# define rsa3072_falcon512_evp_type       0
+# define rsa3072_falcon512_input_type      "rsa3072_falcon512"
+# define rsa3072_falcon512_pem_type        "rsa3072_falcon512"
+# define falconpadded512_evp_type       0
+# define falconpadded512_input_type      "falconpadded512"
+# define falconpadded512_pem_type        "falconpadded512"
+# define p256_falconpadded512_evp_type       0
+# define p256_falconpadded512_input_type      "p256_falconpadded512"
+# define p256_falconpadded512_pem_type        "p256_falconpadded512"
+# define rsa3072_falconpadded512_evp_type       0
+# define rsa3072_falconpadded512_input_type      "rsa3072_falconpadded512"
+# define rsa3072_falconpadded512_pem_type        "rsa3072_falconpadded512"
+# define falcon1024_evp_type       0
+# define falcon1024_input_type      "falcon1024"
+# define falcon1024_pem_type        "falcon1024"
+# define p521_falcon1024_evp_type       0
+# define p521_falcon1024_input_type      "p521_falcon1024"
+# define p521_falcon1024_pem_type        "p521_falcon1024"
+# define falconpadded1024_evp_type       0
+# define falconpadded1024_input_type      "falconpadded1024"
+# define falconpadded1024_pem_type        "falconpadded1024"
+# define p521_falconpadded1024_evp_type       0
+# define p521_falconpadded1024_input_type      "p521_falconpadded1024"
+# define p521_falconpadded1024_pem_type        "p521_falconpadded1024"
+# define mayo1_evp_type       0
+# define mayo1_input_type      "mayo1"
+# define mayo1_pem_type        "mayo1"
+# define p256_mayo1_evp_type       0
+# define p256_mayo1_input_type      "p256_mayo1"
+# define p256_mayo1_pem_type        "p256_mayo1"
+# define mayo2_evp_type       0
+# define mayo2_input_type      "mayo2"
+# define mayo2_pem_type        "mayo2"
+# define p256_mayo2_evp_type       0
+# define p256_mayo2_input_type      "p256_mayo2"
+# define p256_mayo2_pem_type        "p256_mayo2"
+# define mayo3_evp_type       0
+# define mayo3_input_type      "mayo3"
+# define mayo3_pem_type        "mayo3"
+# define p384_mayo3_evp_type       0
+# define p384_mayo3_input_type      "p384_mayo3"
+# define p384_mayo3_pem_type        "p384_mayo3"
+# define mayo5_evp_type       0
+# define mayo5_input_type      "mayo5"
+# define mayo5_pem_type        "mayo5"
+# define p521_mayo5_evp_type       0
+# define p521_mayo5_input_type      "p521_mayo5"
+# define p521_mayo5_pem_type        "p521_mayo5"
+# define CROSSrsdp128balanced_evp_type       0
+# define CROSSrsdp128balanced_input_type      "CROSSrsdp128balanced"
+# define CROSSrsdp128balanced_pem_type        "CROSSrsdp128balanced"
+# define OV_Is_pkc_evp_type       0
+# define OV_Is_pkc_input_type      "OV_Is_pkc"
+# define OV_Is_pkc_pem_type        "OV_Is_pkc"
+# define p256_OV_Is_pkc_evp_type       0
+# define p256_OV_Is_pkc_input_type      "p256_OV_Is_pkc"
+# define p256_OV_Is_pkc_pem_type        "p256_OV_Is_pkc"
+# define OV_Ip_pkc_evp_type       0
+# define OV_Ip_pkc_input_type      "OV_Ip_pkc"
+# define OV_Ip_pkc_pem_type        "OV_Ip_pkc"
+# define p256_OV_Ip_pkc_evp_type       0
+# define p256_OV_Ip_pkc_input_type      "p256_OV_Ip_pkc"
+# define p256_OV_Ip_pkc_pem_type        "p256_OV_Ip_pkc"
+# define OV_Is_pkc_skc_evp_type       0
+# define OV_Is_pkc_skc_input_type      "OV_Is_pkc_skc"
+# define OV_Is_pkc_skc_pem_type        "OV_Is_pkc_skc"
+# define p256_OV_Is_pkc_skc_evp_type       0
+# define p256_OV_Is_pkc_skc_input_type      "p256_OV_Is_pkc_skc"
+# define p256_OV_Is_pkc_skc_pem_type        "p256_OV_Is_pkc_skc"
+# define OV_Ip_pkc_skc_evp_type       0
+# define OV_Ip_pkc_skc_input_type      "OV_Ip_pkc_skc"
+# define OV_Ip_pkc_skc_pem_type        "OV_Ip_pkc_skc"
+# define p256_OV_Ip_pkc_skc_evp_type       0
+# define p256_OV_Ip_pkc_skc_input_type      "p256_OV_Ip_pkc_skc"
+# define p256_OV_Ip_pkc_skc_pem_type        "p256_OV_Ip_pkc_skc"
+# define snova2454_evp_type       0
+# define snova2454_input_type      "snova2454"
+# define snova2454_pem_type        "snova2454"
+# define p256_snova2454_evp_type       0
+# define p256_snova2454_input_type      "p256_snova2454"
+# define p256_snova2454_pem_type        "p256_snova2454"
+# define snova2454esk_evp_type       0
+# define snova2454esk_input_type      "snova2454esk"
+# define snova2454esk_pem_type        "snova2454esk"
+# define p256_snova2454esk_evp_type       0
+# define p256_snova2454esk_input_type      "p256_snova2454esk"
+# define p256_snova2454esk_pem_type        "p256_snova2454esk"
+# define snova37172_evp_type       0
+# define snova37172_input_type      "snova37172"
+# define snova37172_pem_type        "snova37172"
+# define p256_snova37172_evp_type       0
+# define p256_snova37172_input_type      "p256_snova37172"
+# define p256_snova37172_pem_type        "p256_snova37172"
+# define snova2455_evp_type       0
+# define snova2455_input_type      "snova2455"
+# define snova2455_pem_type        "snova2455"
+# define p384_snova2455_evp_type       0
+# define p384_snova2455_input_type      "p384_snova2455"
+# define p384_snova2455_pem_type        "p384_snova2455"
+# define snova2965_evp_type       0
+# define snova2965_input_type      "snova2965"
+# define snova2965_pem_type        "snova2965"
+# define p521_snova2965_evp_type       0
+# define p521_snova2965_input_type      "p521_snova2965"
+# define p521_snova2965_pem_type        "p521_snova2965"
+# define slhdsasha2128s_evp_type       0
+# define slhdsasha2128s_input_type      "slhdsasha2128s"
+# define slhdsasha2128s_pem_type        "slhdsasha2128s"
+# define slhdsasha2128f_evp_type       0
+# define slhdsasha2128f_input_type      "slhdsasha2128f"
+# define slhdsasha2128f_pem_type        "slhdsasha2128f"
+# define slhdsasha2192s_evp_type       0
+# define slhdsasha2192s_input_type      "slhdsasha2192s"
+# define slhdsasha2192s_pem_type        "slhdsasha2192s"
+# define slhdsasha2192f_evp_type       0
+# define slhdsasha2192f_input_type      "slhdsasha2192f"
+# define slhdsasha2192f_pem_type        "slhdsasha2192f"
+# define slhdsasha2256s_evp_type       0
+# define slhdsasha2256s_input_type      "slhdsasha2256s"
+# define slhdsasha2256s_pem_type        "slhdsasha2256s"
+# define slhdsasha2256f_evp_type       0
+# define slhdsasha2256f_input_type      "slhdsasha2256f"
+# define slhdsasha2256f_pem_type        "slhdsasha2256f"
+# define slhdsashake128s_evp_type       0
+# define slhdsashake128s_input_type      "slhdsashake128s"
+# define slhdsashake128s_pem_type        "slhdsashake128s"
+# define slhdsashake128f_evp_type       0
+# define slhdsashake128f_input_type      "slhdsashake128f"
+# define slhdsashake128f_pem_type        "slhdsashake128f"
+# define slhdsashake192s_evp_type       0
+# define slhdsashake192s_input_type      "slhdsashake192s"
+# define slhdsashake192s_pem_type        "slhdsashake192s"
+# define slhdsashake192f_evp_type       0
+# define slhdsashake192f_input_type      "slhdsashake192f"
+# define slhdsashake192f_pem_type        "slhdsashake192f"
+# define slhdsashake256s_evp_type       0
+# define slhdsashake256s_input_type      "slhdsashake256s"
+# define slhdsashake256s_pem_type        "slhdsashake256s"
+# define slhdsashake256f_evp_type       0
+# define slhdsashake256f_input_type      "slhdsashake256f"
+# define slhdsashake256f_pem_type        "slhdsashake256f"
+# define mqom2cat1gf16fastr5_evp_type       0
+# define mqom2cat1gf16fastr5_input_type      "mqom2cat1gf16fastr5"
+# define mqom2cat1gf16fastr5_pem_type        "mqom2cat1gf16fastr5"
+# define p256_mqom2cat1gf16fastr5_evp_type       0
+# define p256_mqom2cat1gf16fastr5_input_type      "p256_mqom2cat1gf16fastr5"
+# define p256_mqom2cat1gf16fastr5_pem_type        "p256_mqom2cat1gf16fastr5"
+# define mqom2cat3gf16fastr5_evp_type       0
+# define mqom2cat3gf16fastr5_input_type      "mqom2cat3gf16fastr5"
+# define mqom2cat3gf16fastr5_pem_type        "mqom2cat3gf16fastr5"
+# define p384_mqom2cat3gf16fastr5_evp_type       0
+# define p384_mqom2cat3gf16fastr5_input_type      "p384_mqom2cat3gf16fastr5"
+# define p384_mqom2cat3gf16fastr5_pem_type        "p384_mqom2cat3gf16fastr5"
+# define mqom2cat5gf16fastr5_evp_type       0
+# define mqom2cat5gf16fastr5_input_type      "mqom2cat5gf16fastr5"
+# define mqom2cat5gf16fastr5_pem_type        "mqom2cat5gf16fastr5"
+# define p521_mqom2cat5gf16fastr5_evp_type       0
+# define p521_mqom2cat5gf16fastr5_input_type      "p521_mqom2cat5gf16fastr5"
+# define p521_mqom2cat5gf16fastr5_pem_type        "p521_mqom2cat5gf16fastr5"
 ///// OQS_TEMPLATE_FRAGMENT_ENCODER_DEFINES_END
 
 /* ---------------------------------------------------------------------- */
@@ -1545,6 +1582,7 @@ key2text_encode(void *vctx, const void *key, int selection, OSSL_CORE_BIO *cout,
 ///// OQS_TEMPLATE_FRAGMENT_ENCODER_MAKE_START
 #ifdef OQS_KEM_ENCODERS
 
+
 MAKE_ENCODER(, efrodo640aes, oqsx, EncryptedPrivateKeyInfo, der);
 MAKE_ENCODER(, efrodo640aes, oqsx, EncryptedPrivateKeyInfo, pem);
 MAKE_ENCODER(, efrodo640aes, oqsx, PrivateKeyInfo, der);
@@ -1943,6 +1981,90 @@ MAKE_ENCODER(_ecp, p521_bikel5, oqsx, SubjectPublicKeyInfo, pem);
 MAKE_TEXT_ENCODER(_ecp, p521_bikel5);
 #endif /* OQS_KEM_ENCODERS */
 
+MAKE_ENCODER(, faest128s, oqsx, EncryptedPrivateKeyInfo, der);
+MAKE_ENCODER(, faest128s, oqsx, EncryptedPrivateKeyInfo, pem);
+MAKE_ENCODER(, faest128s, oqsx, PrivateKeyInfo, der);
+MAKE_ENCODER(, faest128s, oqsx, PrivateKeyInfo, pem);
+MAKE_ENCODER(, faest128s, oqsx, SubjectPublicKeyInfo, der);
+MAKE_ENCODER(, faest128s, oqsx, SubjectPublicKeyInfo, pem);
+MAKE_TEXT_ENCODER(, faest128s);
+MAKE_ENCODER(, faest128f, oqsx, EncryptedPrivateKeyInfo, der);
+MAKE_ENCODER(, faest128f, oqsx, EncryptedPrivateKeyInfo, pem);
+MAKE_ENCODER(, faest128f, oqsx, PrivateKeyInfo, der);
+MAKE_ENCODER(, faest128f, oqsx, PrivateKeyInfo, pem);
+MAKE_ENCODER(, faest128f, oqsx, SubjectPublicKeyInfo, der);
+MAKE_ENCODER(, faest128f, oqsx, SubjectPublicKeyInfo, pem);
+MAKE_TEXT_ENCODER(, faest128f);
+MAKE_ENCODER(, faest192s, oqsx, EncryptedPrivateKeyInfo, der);
+MAKE_ENCODER(, faest192s, oqsx, EncryptedPrivateKeyInfo, pem);
+MAKE_ENCODER(, faest192s, oqsx, PrivateKeyInfo, der);
+MAKE_ENCODER(, faest192s, oqsx, PrivateKeyInfo, pem);
+MAKE_ENCODER(, faest192s, oqsx, SubjectPublicKeyInfo, der);
+MAKE_ENCODER(, faest192s, oqsx, SubjectPublicKeyInfo, pem);
+MAKE_TEXT_ENCODER(, faest192s);
+MAKE_ENCODER(, faest192f, oqsx, EncryptedPrivateKeyInfo, der);
+MAKE_ENCODER(, faest192f, oqsx, EncryptedPrivateKeyInfo, pem);
+MAKE_ENCODER(, faest192f, oqsx, PrivateKeyInfo, der);
+MAKE_ENCODER(, faest192f, oqsx, PrivateKeyInfo, pem);
+MAKE_ENCODER(, faest192f, oqsx, SubjectPublicKeyInfo, der);
+MAKE_ENCODER(, faest192f, oqsx, SubjectPublicKeyInfo, pem);
+MAKE_TEXT_ENCODER(, faest192f);
+MAKE_ENCODER(, faest256s, oqsx, EncryptedPrivateKeyInfo, der);
+MAKE_ENCODER(, faest256s, oqsx, EncryptedPrivateKeyInfo, pem);
+MAKE_ENCODER(, faest256s, oqsx, PrivateKeyInfo, der);
+MAKE_ENCODER(, faest256s, oqsx, PrivateKeyInfo, pem);
+MAKE_ENCODER(, faest256s, oqsx, SubjectPublicKeyInfo, der);
+MAKE_ENCODER(, faest256s, oqsx, SubjectPublicKeyInfo, pem);
+MAKE_TEXT_ENCODER(, faest256s);
+MAKE_ENCODER(, faest256f, oqsx, EncryptedPrivateKeyInfo, der);
+MAKE_ENCODER(, faest256f, oqsx, EncryptedPrivateKeyInfo, pem);
+MAKE_ENCODER(, faest256f, oqsx, PrivateKeyInfo, der);
+MAKE_ENCODER(, faest256f, oqsx, PrivateKeyInfo, pem);
+MAKE_ENCODER(, faest256f, oqsx, SubjectPublicKeyInfo, der);
+MAKE_ENCODER(, faest256f, oqsx, SubjectPublicKeyInfo, pem);
+MAKE_TEXT_ENCODER(, faest256f);
+MAKE_ENCODER(, hawk512, oqsx, EncryptedPrivateKeyInfo, der);
+MAKE_ENCODER(, hawk512, oqsx, EncryptedPrivateKeyInfo, pem);
+MAKE_ENCODER(, hawk512, oqsx, PrivateKeyInfo, der);
+MAKE_ENCODER(, hawk512, oqsx, PrivateKeyInfo, pem);
+MAKE_ENCODER(, hawk512, oqsx, SubjectPublicKeyInfo, der);
+MAKE_ENCODER(, hawk512, oqsx, SubjectPublicKeyInfo, pem);
+MAKE_TEXT_ENCODER(, hawk512);
+MAKE_ENCODER(, hawk1024, oqsx, EncryptedPrivateKeyInfo, der);
+MAKE_ENCODER(, hawk1024, oqsx, EncryptedPrivateKeyInfo, pem);
+MAKE_ENCODER(, hawk1024, oqsx, PrivateKeyInfo, der);
+MAKE_ENCODER(, hawk1024, oqsx, PrivateKeyInfo, pem);
+MAKE_ENCODER(, hawk1024, oqsx, SubjectPublicKeyInfo, der);
+MAKE_ENCODER(, hawk1024, oqsx, SubjectPublicKeyInfo, pem);
+MAKE_TEXT_ENCODER(, hawk1024);
+MAKE_ENCODER(, qruov1q7l10v740m100, oqsx, EncryptedPrivateKeyInfo, der);
+MAKE_ENCODER(, qruov1q7l10v740m100, oqsx, EncryptedPrivateKeyInfo, pem);
+MAKE_ENCODER(, qruov1q7l10v740m100, oqsx, PrivateKeyInfo, der);
+MAKE_ENCODER(, qruov1q7l10v740m100, oqsx, PrivateKeyInfo, pem);
+MAKE_ENCODER(, qruov1q7l10v740m100, oqsx, SubjectPublicKeyInfo, der);
+MAKE_ENCODER(, qruov1q7l10v740m100, oqsx, SubjectPublicKeyInfo, pem);
+MAKE_TEXT_ENCODER(, qruov1q7l10v740m100);
+MAKE_ENCODER(, qruov3q7l10v1100m140, oqsx, EncryptedPrivateKeyInfo, der);
+MAKE_ENCODER(, qruov3q7l10v1100m140, oqsx, EncryptedPrivateKeyInfo, pem);
+MAKE_ENCODER(, qruov3q7l10v1100m140, oqsx, PrivateKeyInfo, der);
+MAKE_ENCODER(, qruov3q7l10v1100m140, oqsx, PrivateKeyInfo, pem);
+MAKE_ENCODER(, qruov3q7l10v1100m140, oqsx, SubjectPublicKeyInfo, der);
+MAKE_ENCODER(, qruov3q7l10v1100m140, oqsx, SubjectPublicKeyInfo, pem);
+MAKE_TEXT_ENCODER(, qruov3q7l10v1100m140);
+MAKE_ENCODER(, qruov5q7l10v1490m190, oqsx, EncryptedPrivateKeyInfo, der);
+MAKE_ENCODER(, qruov5q7l10v1490m190, oqsx, EncryptedPrivateKeyInfo, pem);
+MAKE_ENCODER(, qruov5q7l10v1490m190, oqsx, PrivateKeyInfo, der);
+MAKE_ENCODER(, qruov5q7l10v1490m190, oqsx, PrivateKeyInfo, pem);
+MAKE_ENCODER(, qruov5q7l10v1490m190, oqsx, SubjectPublicKeyInfo, der);
+MAKE_ENCODER(, qruov5q7l10v1490m190, oqsx, SubjectPublicKeyInfo, pem);
+MAKE_TEXT_ENCODER(, qruov5q7l10v1490m190);
+MAKE_ENCODER(, sdithhypercubecat1gf256, oqsx, EncryptedPrivateKeyInfo, der);
+MAKE_ENCODER(, sdithhypercubecat1gf256, oqsx, EncryptedPrivateKeyInfo, pem);
+MAKE_ENCODER(, sdithhypercubecat1gf256, oqsx, PrivateKeyInfo, der);
+MAKE_ENCODER(, sdithhypercubecat1gf256, oqsx, PrivateKeyInfo, pem);
+MAKE_ENCODER(, sdithhypercubecat1gf256, oqsx, SubjectPublicKeyInfo, der);
+MAKE_ENCODER(, sdithhypercubecat1gf256, oqsx, SubjectPublicKeyInfo, pem);
+MAKE_TEXT_ENCODER(, sdithhypercubecat1gf256);
 MAKE_ENCODER(, mldsa44, oqsx, EncryptedPrivateKeyInfo, der);
 MAKE_ENCODER(, mldsa44, oqsx, EncryptedPrivateKeyInfo, pem);
 MAKE_ENCODER(, mldsa44, oqsx, PrivateKeyInfo, der);
