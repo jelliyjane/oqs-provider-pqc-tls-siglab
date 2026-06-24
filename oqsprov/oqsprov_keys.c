@@ -57,9 +57,9 @@ static int oqsx_key_recreate_classickey(OQSX_KEY *key, oqsx_key_op_t op);
 
 
 #ifdef OQS_KEM_ENCODERS
-#define NID_TABLE_LEN 128
+#define NID_TABLE_LEN 175
 #else
-#define NID_TABLE_LEN 74
+#define NID_TABLE_LEN 121
 #endif
 
 static oqs_nid_name_t nid_names[NID_TABLE_LEN] = {
@@ -133,6 +133,11 @@ static oqs_nid_name_t nid_names[NID_TABLE_LEN] = {
        { 0, "qruov3q7l10v1100m140", OQS_SIG_alg_qruov3q7l10v1100m140, KEY_TYPE_SIG, 192 },
        { 0, "qruov5q7l10v1490m190", OQS_SIG_alg_qruov5q7l10v1490m190, KEY_TYPE_SIG, 256 },
        { 0, "sdithhypercubecat1gf256", OQS_SIG_alg_sdith_hypercube_cat1_gf256, KEY_TYPE_SIG, 128 },
+       { 0, "sdithhypercubecat3gf256", OQS_SIG_alg_sdith_hypercube_cat3_gf256, KEY_TYPE_SIG, 192 },
+       { 0, "sdithhypercubecat5gf256", OQS_SIG_alg_sdith_hypercube_cat5_gf256, KEY_TYPE_SIG, 256 },
+       { 0, "sdiththresholdcat1gf256", OQS_SIG_alg_sdith_threshold_cat1_gf256, KEY_TYPE_SIG, 128 },
+       { 0, "sdiththresholdcat3gf256", OQS_SIG_alg_sdith_threshold_cat3_gf256, KEY_TYPE_SIG, 192 },
+       { 0, "sdiththresholdcat5gf256", OQS_SIG_alg_sdith_threshold_cat5_gf256, KEY_TYPE_SIG, 256 },
        { 0, "mldsa44", OQS_SIG_alg_ml_dsa_44, KEY_TYPE_SIG, 128 },
        { 0, "p256_mldsa44", OQS_SIG_alg_ml_dsa_44, KEY_TYPE_HYB_SIG, 128 },
        { 0, "rsa3072_mldsa44", OQS_SIG_alg_ml_dsa_44, KEY_TYPE_HYB_SIG, 128 },
@@ -159,14 +164,26 @@ static oqs_nid_name_t nid_names[NID_TABLE_LEN] = {
        { 0, "mayo5", OQS_SIG_alg_mayo_5, KEY_TYPE_SIG, 256 },
        { 0, "p521_mayo5", OQS_SIG_alg_mayo_5, KEY_TYPE_HYB_SIG, 256 },
        { 0, "CROSSrsdp128balanced", OQS_SIG_alg_cross_rsdp_128_balanced, KEY_TYPE_SIG, 128 },
+       { 0, "CROSSrsdp128fast", OQS_SIG_alg_cross_rsdp_128_fast, KEY_TYPE_SIG, 128 },
+       { 0, "CROSSrsdp128small", OQS_SIG_alg_cross_rsdp_128_small, KEY_TYPE_SIG, 128 },
+       { 0, "CROSSrsdp192balanced", OQS_SIG_alg_cross_rsdp_192_balanced, KEY_TYPE_SIG, 192 },
+       { 0, "CROSSrsdp192fast", OQS_SIG_alg_cross_rsdp_192_fast, KEY_TYPE_SIG, 192 },
        { 0, "OV_Is_pkc", OQS_SIG_alg_uov_ov_Is_pkc, KEY_TYPE_SIG, 128 },
        { 0, "p256_OV_Is_pkc", OQS_SIG_alg_uov_ov_Is_pkc, KEY_TYPE_HYB_SIG, 128 },
        { 0, "OV_Ip_pkc", OQS_SIG_alg_uov_ov_Ip_pkc, KEY_TYPE_SIG, 128 },
        { 0, "p256_OV_Ip_pkc", OQS_SIG_alg_uov_ov_Ip_pkc, KEY_TYPE_HYB_SIG, 128 },
+       { 0, "OV_III_pkc", OQS_SIG_alg_uov_ov_III_pkc, KEY_TYPE_SIG, 192 },
+       { 0, "p384_OV_III_pkc", OQS_SIG_alg_uov_ov_III_pkc, KEY_TYPE_HYB_SIG, 192 },
+       { 0, "OV_V_pkc", OQS_SIG_alg_uov_ov_V_pkc, KEY_TYPE_SIG, 256 },
+       { 0, "p521_OV_V_pkc", OQS_SIG_alg_uov_ov_V_pkc, KEY_TYPE_HYB_SIG, 256 },
        { 0, "OV_Is_pkc_skc", OQS_SIG_alg_uov_ov_Is_pkc_skc, KEY_TYPE_SIG, 128 },
        { 0, "p256_OV_Is_pkc_skc", OQS_SIG_alg_uov_ov_Is_pkc_skc, KEY_TYPE_HYB_SIG, 128 },
        { 0, "OV_Ip_pkc_skc", OQS_SIG_alg_uov_ov_Ip_pkc_skc, KEY_TYPE_SIG, 128 },
        { 0, "p256_OV_Ip_pkc_skc", OQS_SIG_alg_uov_ov_Ip_pkc_skc, KEY_TYPE_HYB_SIG, 128 },
+       { 0, "OV_III_pkc_skc", OQS_SIG_alg_uov_ov_III_pkc_skc, KEY_TYPE_SIG, 192 },
+       { 0, "p384_OV_III_pkc_skc", OQS_SIG_alg_uov_ov_III_pkc_skc, KEY_TYPE_HYB_SIG, 192 },
+       { 0, "OV_V_pkc_skc", OQS_SIG_alg_uov_ov_V_pkc_skc, KEY_TYPE_SIG, 256 },
+       { 0, "p521_OV_V_pkc_skc", OQS_SIG_alg_uov_ov_V_pkc_skc, KEY_TYPE_HYB_SIG, 256 },
        { 0, "snova2454", OQS_SIG_alg_snova_SNOVA_24_5_4, KEY_TYPE_SIG, 128 },
        { 0, "p256_snova2454", OQS_SIG_alg_snova_SNOVA_24_5_4, KEY_TYPE_HYB_SIG, 128 },
        { 0, "snova2454esk", OQS_SIG_alg_snova_SNOVA_24_5_4_esk, KEY_TYPE_SIG, 128 },
