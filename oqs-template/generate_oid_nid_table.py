@@ -37,7 +37,7 @@ def gen_sig_table(oqslibdocdir):
         if variant['name'].startswith('dilithium2'):
             claimed_nist_level = 2
 
-        try: 
+        try:
             table.append([variant['name'], liboqs_sigs[sig['family']]['spec-version'],
                           liboqs_sigs[sig['family']]['nist-round'], claimed_nist_level, variant['code_point'],
                           variant['oid']])
@@ -99,7 +99,7 @@ def gen_kem_table(oqslibdocdir):
         hybrid_elliptic_curve = 'secp521_r1'
     else:
         sys.exit("kem['bit_security'] value malformed.")
-        
+
     if 'implementation_version' in kem:
         implementation_version = kem['implementation_version']
     else:
@@ -109,7 +109,7 @@ def gen_kem_table(oqslibdocdir):
     if kem['name_group'].startswith('sidhp503') or kem['name_group'].startswith('sikep503'):
         claimed_nist_level = 2
 
-    try: 
+    try:
        table.append([kem['family'], implementation_version,
                      kem['name_group'], str(liboqs_kems[kem['family']]['nist-round']), claimed_nist_level,
                      kem['nid'], ""])
@@ -125,7 +125,7 @@ def gen_kem_table(oqslibdocdir):
             for entry in kem['extra_nids']['current']:
                 table.append([kem['family'], implementation_version,
                               kem['name_group'], str(liboqs_kems[kem['family']]['nist-round']), claimed_nist_level,
-                              entry['nid'], 
+                              entry['nid'],
                               entry['hybrid_group'] if 'hybrid_group' in entry else ""])
         if 'old' in kem['extra_nids']:
             for entry in kem['extra_nids']['old']:
@@ -147,6 +147,38 @@ def gen_kem_table(oqslibdocdir):
 # main:
 with open(os.path.join('oqs-template', 'generate.yml'), mode='r', encoding='utf-8') as f:
     config = yaml.safe_load(f.read())
+
+# generate.py writes the complete experiment mapping before importing this
+# module. Mirror those generated mix_with entries so oqs-sig-info.md documents
+# the same 86 composites as the provider code.
+composite_manifest_path = os.path.join(
+    'oqs-template', 'composite-experiment.yml')
+if os.path.exists(composite_manifest_path):
+    with open(composite_manifest_path, mode='r', encoding='utf-8') as f:
+        composite_manifest = yaml.safe_load(f.read())['composites']
+    variants = {
+        variant['name']: variant
+        for family in config['sigs']
+        for variant in family['variants']
+    }
+    pretty_names = {
+        'p256': 'ECDSA p256',
+        'p384': 'ECDSA p384',
+        'p521': 'ECDSA p521',
+        'rsa3072': 'RSA3072',
+        'rsa7680': 'RSA7680',
+        'rsa15360': 'RSA15360',
+    }
+    for entry in composite_manifest:
+        variant = variants[entry['pqc']]
+        mixes = variant.setdefault('mix_with', [])
+        if not any(mix['name'] == entry['classical'] for mix in mixes):
+            mixes.append({
+                'name': entry['classical'],
+                'pretty_name': pretty_names[entry['classical']],
+                'oid': entry['oid'],
+                'code_point': entry['code_point'],
+            })
 
 if 'LIBOQS_DOCS_DIR' not in os.environ:
    parser = argparse.ArgumentParser()

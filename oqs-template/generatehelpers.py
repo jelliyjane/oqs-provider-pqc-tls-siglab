@@ -54,6 +54,8 @@ def get_kem_nistlevel(alg, docsdir):
     return None
 
 def get_sig_nistlevel(family, alg, docsdir):
+    if 'nist_level' in alg:
+        return int(alg['nist_level'])
     # translate family names in generate.yml to directory names for liboqs algorithm datasheets
     if family['family'] == 'CRYSTALS-Dilithium': datasheetname = 'dilithium'
     else: datasheetname = family['family'].lower().replace('-', '_')
@@ -85,7 +87,7 @@ def nist_to_bits(nistlevel):
       return 192
    elif nistlevel==5:
       return 256
-   else: 
+   else:
       return None
 
 def complete_config(config, oqsdocsdir = None):
@@ -97,7 +99,7 @@ def complete_config(config, oqsdocsdir = None):
    for kem in config['kems']:
       if not "bit_security" in kem.keys():
          bits_level = nist_to_bits(get_kem_nistlevel(kem, oqsdocsdir))
-         if bits_level == None: 
+         if bits_level == None:
              print("Cannot find security level for {:s} {:s}".format(kem['family'], kem['name_group']))
              exit(1)
          kem['bit_security'] = bits_level
@@ -105,7 +107,7 @@ def complete_config(config, oqsdocsdir = None):
       for sig in famsig['variants']:
          if not "security" in sig.keys():
             bits_level = nist_to_bits(get_sig_nistlevel(famsig, sig, oqsdocsdir))
-            if bits_level == None: 
+            if bits_level == None:
                 if sig['name'].startswith("rainbowI"):
                     bits_level=128
                 else:
@@ -113,4 +115,3 @@ def complete_config(config, oqsdocsdir = None):
                     exit(1)
             sig['security'] = bits_level
    return config
-

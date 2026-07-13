@@ -164,71 +164,71 @@ DECODER_w_structure("p521_bikel5", der, SubjectPublicKeyInfo, p521_bikel5),
 
 #ifdef OQS_ENABLE_SIG_faest_128s
 DECODER_w_structure("faest128s", der, PrivateKeyInfo, faest128s),
-DECODER_w_structure("faest128s", der, SubjectPublicKeyInfo, faest128s),
+DECODER_w_structure("faest128s", der, SubjectPublicKeyInfo, faest128s),DECODER_w_structure("p256_faest128s", der, PrivateKeyInfo, p256_faest128s),
+DECODER_w_structure("p256_faest128s", der, SubjectPublicKeyInfo, p256_faest128s),DECODER_w_structure("rsa3072_faest128s", der, PrivateKeyInfo, rsa3072_faest128s),
+DECODER_w_structure("rsa3072_faest128s", der, SubjectPublicKeyInfo, rsa3072_faest128s),
 #endif
 #ifdef OQS_ENABLE_SIG_faest_128f
 DECODER_w_structure("faest128f", der, PrivateKeyInfo, faest128f),
-DECODER_w_structure("faest128f", der, SubjectPublicKeyInfo, faest128f),
+DECODER_w_structure("faest128f", der, SubjectPublicKeyInfo, faest128f),DECODER_w_structure("p256_faest128f", der, PrivateKeyInfo, p256_faest128f),
+DECODER_w_structure("p256_faest128f", der, SubjectPublicKeyInfo, p256_faest128f),DECODER_w_structure("rsa3072_faest128f", der, PrivateKeyInfo, rsa3072_faest128f),
+DECODER_w_structure("rsa3072_faest128f", der, SubjectPublicKeyInfo, rsa3072_faest128f),
 #endif
 #ifdef OQS_ENABLE_SIG_faest_192s
 DECODER_w_structure("faest192s", der, PrivateKeyInfo, faest192s),
-DECODER_w_structure("faest192s", der, SubjectPublicKeyInfo, faest192s),
+DECODER_w_structure("faest192s", der, SubjectPublicKeyInfo, faest192s),DECODER_w_structure("p384_faest192s", der, PrivateKeyInfo, p384_faest192s),
+DECODER_w_structure("p384_faest192s", der, SubjectPublicKeyInfo, p384_faest192s),DECODER_w_structure("rsa7680_faest192s", der, PrivateKeyInfo, rsa7680_faest192s),
+DECODER_w_structure("rsa7680_faest192s", der, SubjectPublicKeyInfo, rsa7680_faest192s),
 #endif
 #ifdef OQS_ENABLE_SIG_faest_192f
 DECODER_w_structure("faest192f", der, PrivateKeyInfo, faest192f),
-DECODER_w_structure("faest192f", der, SubjectPublicKeyInfo, faest192f),
+DECODER_w_structure("faest192f", der, SubjectPublicKeyInfo, faest192f),DECODER_w_structure("p384_faest192f", der, PrivateKeyInfo, p384_faest192f),
+DECODER_w_structure("p384_faest192f", der, SubjectPublicKeyInfo, p384_faest192f),DECODER_w_structure("rsa7680_faest192f", der, PrivateKeyInfo, rsa7680_faest192f),
+DECODER_w_structure("rsa7680_faest192f", der, SubjectPublicKeyInfo, rsa7680_faest192f),
 #endif
 #ifdef OQS_ENABLE_SIG_faest_256s
 DECODER_w_structure("faest256s", der, PrivateKeyInfo, faest256s),
-DECODER_w_structure("faest256s", der, SubjectPublicKeyInfo, faest256s),
+DECODER_w_structure("faest256s", der, SubjectPublicKeyInfo, faest256s),DECODER_w_structure("p521_faest256s", der, PrivateKeyInfo, p521_faest256s),
+DECODER_w_structure("p521_faest256s", der, SubjectPublicKeyInfo, p521_faest256s),DECODER_w_structure("rsa15360_faest256s", der, PrivateKeyInfo, rsa15360_faest256s),
+DECODER_w_structure("rsa15360_faest256s", der, SubjectPublicKeyInfo, rsa15360_faest256s),
 #endif
 #ifdef OQS_ENABLE_SIG_faest_256f
 DECODER_w_structure("faest256f", der, PrivateKeyInfo, faest256f),
-DECODER_w_structure("faest256f", der, SubjectPublicKeyInfo, faest256f),
+DECODER_w_structure("faest256f", der, SubjectPublicKeyInfo, faest256f),DECODER_w_structure("p521_faest256f", der, PrivateKeyInfo, p521_faest256f),
+DECODER_w_structure("p521_faest256f", der, SubjectPublicKeyInfo, p521_faest256f),DECODER_w_structure("rsa15360_faest256f", der, PrivateKeyInfo, rsa15360_faest256f),
+DECODER_w_structure("rsa15360_faest256f", der, SubjectPublicKeyInfo, rsa15360_faest256f),
 #endif
 #ifdef OQS_ENABLE_SIG_hawk_512
 DECODER_w_structure("hawk512", der, PrivateKeyInfo, hawk512),
-DECODER_w_structure("hawk512", der, SubjectPublicKeyInfo, hawk512),
+DECODER_w_structure("hawk512", der, SubjectPublicKeyInfo, hawk512),DECODER_w_structure("p256_hawk512", der, PrivateKeyInfo, p256_hawk512),
+DECODER_w_structure("p256_hawk512", der, SubjectPublicKeyInfo, p256_hawk512),DECODER_w_structure("rsa3072_hawk512", der, PrivateKeyInfo, rsa3072_hawk512),
+DECODER_w_structure("rsa3072_hawk512", der, SubjectPublicKeyInfo, rsa3072_hawk512),
 #endif
 #ifdef OQS_ENABLE_SIG_hawk_1024
 DECODER_w_structure("hawk1024", der, PrivateKeyInfo, hawk1024),
-DECODER_w_structure("hawk1024", der, SubjectPublicKeyInfo, hawk1024),
+DECODER_w_structure("hawk1024", der, SubjectPublicKeyInfo, hawk1024),DECODER_w_structure("p521_hawk1024", der, PrivateKeyInfo, p521_hawk1024),
+DECODER_w_structure("p521_hawk1024", der, SubjectPublicKeyInfo, p521_hawk1024),DECODER_w_structure("rsa15360_hawk1024", der, PrivateKeyInfo, rsa15360_hawk1024),
+DECODER_w_structure("rsa15360_hawk1024", der, SubjectPublicKeyInfo, rsa15360_hawk1024),
 #endif
 #ifdef OQS_ENABLE_SIG_qruov1q7l10v740m100
 DECODER_w_structure("qruov1q7l10v740m100", der, PrivateKeyInfo, qruov1q7l10v740m100),
-DECODER_w_structure("qruov1q7l10v740m100", der, SubjectPublicKeyInfo, qruov1q7l10v740m100),
+DECODER_w_structure("qruov1q7l10v740m100", der, SubjectPublicKeyInfo, qruov1q7l10v740m100),DECODER_w_structure("p256_qruov1q7l10v740m100", der, PrivateKeyInfo, p256_qruov1q7l10v740m100),
+DECODER_w_structure("p256_qruov1q7l10v740m100", der, SubjectPublicKeyInfo, p256_qruov1q7l10v740m100),DECODER_w_structure("rsa3072_qruov1q7l10v740m100", der, PrivateKeyInfo, rsa3072_qruov1q7l10v740m100),
+DECODER_w_structure("rsa3072_qruov1q7l10v740m100", der, SubjectPublicKeyInfo, rsa3072_qruov1q7l10v740m100),
 #endif
 #ifdef OQS_ENABLE_SIG_qruov3q7l10v1100m140
 DECODER_w_structure("qruov3q7l10v1100m140", der, PrivateKeyInfo, qruov3q7l10v1100m140),
-DECODER_w_structure("qruov3q7l10v1100m140", der, SubjectPublicKeyInfo, qruov3q7l10v1100m140),
+DECODER_w_structure("qruov3q7l10v1100m140", der, SubjectPublicKeyInfo, qruov3q7l10v1100m140),DECODER_w_structure("p384_qruov3q7l10v1100m140", der, PrivateKeyInfo, p384_qruov3q7l10v1100m140),
+DECODER_w_structure("p384_qruov3q7l10v1100m140", der, SubjectPublicKeyInfo, p384_qruov3q7l10v1100m140),DECODER_w_structure("rsa7680_qruov3q7l10v1100m140", der, PrivateKeyInfo, rsa7680_qruov3q7l10v1100m140),
+DECODER_w_structure("rsa7680_qruov3q7l10v1100m140", der, SubjectPublicKeyInfo, rsa7680_qruov3q7l10v1100m140),
 #endif
 #ifdef OQS_ENABLE_SIG_qruov5q7l10v1490m190
 DECODER_w_structure("qruov5q7l10v1490m190", der, PrivateKeyInfo, qruov5q7l10v1490m190),
-DECODER_w_structure("qruov5q7l10v1490m190", der, SubjectPublicKeyInfo, qruov5q7l10v1490m190),
+DECODER_w_structure("qruov5q7l10v1490m190", der, SubjectPublicKeyInfo, qruov5q7l10v1490m190),DECODER_w_structure("p521_qruov5q7l10v1490m190", der, PrivateKeyInfo, p521_qruov5q7l10v1490m190),
+DECODER_w_structure("p521_qruov5q7l10v1490m190", der, SubjectPublicKeyInfo, p521_qruov5q7l10v1490m190),DECODER_w_structure("rsa15360_qruov5q7l10v1490m190", der, PrivateKeyInfo, rsa15360_qruov5q7l10v1490m190),
+DECODER_w_structure("rsa15360_qruov5q7l10v1490m190", der, SubjectPublicKeyInfo, rsa15360_qruov5q7l10v1490m190),
 #endif
 #ifdef OQS_ENABLE_SIG_ml_dsa_44
-DECODER_w_structure("sdithhypercubecat1gf256", der, PrivateKeyInfo, sdithhypercubecat1gf256),
-DECODER_w_structure("sdithhypercubecat1gf256", der, SubjectPublicKeyInfo, sdithhypercubecat1gf256),
-#ifdef OQS_ENABLE_SIG_sdith_hypercube_cat3_gf256
-DECODER_w_structure("sdithhypercubecat3gf256", der, PrivateKeyInfo, sdithhypercubecat3gf256),
-DECODER_w_structure("sdithhypercubecat3gf256", der, SubjectPublicKeyInfo, sdithhypercubecat3gf256),
-#endif
-#ifdef OQS_ENABLE_SIG_sdith_hypercube_cat5_gf256
-DECODER_w_structure("sdithhypercubecat5gf256", der, PrivateKeyInfo, sdithhypercubecat5gf256),
-DECODER_w_structure("sdithhypercubecat5gf256", der, SubjectPublicKeyInfo, sdithhypercubecat5gf256),
-#endif
-#ifdef OQS_ENABLE_SIG_sdith_threshold_cat1_gf256
-DECODER_w_structure("sdiththresholdcat1gf256", der, PrivateKeyInfo, sdiththresholdcat1gf256),
-DECODER_w_structure("sdiththresholdcat1gf256", der, SubjectPublicKeyInfo, sdiththresholdcat1gf256),
-#endif
-#ifdef OQS_ENABLE_SIG_sdith_threshold_cat3_gf256
-DECODER_w_structure("sdiththresholdcat3gf256", der, PrivateKeyInfo, sdiththresholdcat3gf256),
-DECODER_w_structure("sdiththresholdcat3gf256", der, SubjectPublicKeyInfo, sdiththresholdcat3gf256),
-#endif
-#ifdef OQS_ENABLE_SIG_sdith_threshold_cat5_gf256
-DECODER_w_structure("sdiththresholdcat5gf256", der, PrivateKeyInfo, sdiththresholdcat5gf256),
-DECODER_w_structure("sdiththresholdcat5gf256", der, SubjectPublicKeyInfo, sdiththresholdcat5gf256),
-#endif
 DECODER_w_structure("mldsa44", der, PrivateKeyInfo, mldsa44),
 DECODER_w_structure("mldsa44", der, SubjectPublicKeyInfo, mldsa44),DECODER_w_structure("p256_mldsa44", der, PrivateKeyInfo, p256_mldsa44),
 DECODER_w_structure("p256_mldsa44", der, SubjectPublicKeyInfo, p256_mldsa44),DECODER_w_structure("rsa3072_mldsa44", der, PrivateKeyInfo, rsa3072_mldsa44),
@@ -237,12 +237,14 @@ DECODER_w_structure("rsa3072_mldsa44", der, SubjectPublicKeyInfo, rsa3072_mldsa4
 #ifdef OQS_ENABLE_SIG_ml_dsa_65
 DECODER_w_structure("mldsa65", der, PrivateKeyInfo, mldsa65),
 DECODER_w_structure("mldsa65", der, SubjectPublicKeyInfo, mldsa65),DECODER_w_structure("p384_mldsa65", der, PrivateKeyInfo, p384_mldsa65),
-DECODER_w_structure("p384_mldsa65", der, SubjectPublicKeyInfo, p384_mldsa65),
+DECODER_w_structure("p384_mldsa65", der, SubjectPublicKeyInfo, p384_mldsa65),DECODER_w_structure("rsa7680_mldsa65", der, PrivateKeyInfo, rsa7680_mldsa65),
+DECODER_w_structure("rsa7680_mldsa65", der, SubjectPublicKeyInfo, rsa7680_mldsa65),
 #endif
 #ifdef OQS_ENABLE_SIG_ml_dsa_87
 DECODER_w_structure("mldsa87", der, PrivateKeyInfo, mldsa87),
 DECODER_w_structure("mldsa87", der, SubjectPublicKeyInfo, mldsa87),DECODER_w_structure("p521_mldsa87", der, PrivateKeyInfo, p521_mldsa87),
-DECODER_w_structure("p521_mldsa87", der, SubjectPublicKeyInfo, p521_mldsa87),
+DECODER_w_structure("p521_mldsa87", der, SubjectPublicKeyInfo, p521_mldsa87),DECODER_w_structure("rsa15360_mldsa87", der, PrivateKeyInfo, rsa15360_mldsa87),
+DECODER_w_structure("rsa15360_mldsa87", der, SubjectPublicKeyInfo, rsa15360_mldsa87),
 #endif
 #ifdef OQS_ENABLE_SIG_falcon_512
 DECODER_w_structure("falcon512", der, PrivateKeyInfo, falcon512),
@@ -259,7 +261,8 @@ DECODER_w_structure("rsa3072_falconpadded512", der, SubjectPublicKeyInfo, rsa307
 #ifdef OQS_ENABLE_SIG_falcon_1024
 DECODER_w_structure("falcon1024", der, PrivateKeyInfo, falcon1024),
 DECODER_w_structure("falcon1024", der, SubjectPublicKeyInfo, falcon1024),DECODER_w_structure("p521_falcon1024", der, PrivateKeyInfo, p521_falcon1024),
-DECODER_w_structure("p521_falcon1024", der, SubjectPublicKeyInfo, p521_falcon1024),
+DECODER_w_structure("p521_falcon1024", der, SubjectPublicKeyInfo, p521_falcon1024),DECODER_w_structure("rsa15360_falcon1024", der, PrivateKeyInfo, rsa15360_falcon1024),
+DECODER_w_structure("rsa15360_falcon1024", der, SubjectPublicKeyInfo, rsa15360_falcon1024),
 #endif
 #ifdef OQS_ENABLE_SIG_falcon_padded_1024
 DECODER_w_structure("falconpadded1024", der, PrivateKeyInfo, falconpadded1024),
@@ -269,22 +272,26 @@ DECODER_w_structure("p521_falconpadded1024", der, SubjectPublicKeyInfo, p521_fal
 #ifdef OQS_ENABLE_SIG_mayo_1
 DECODER_w_structure("mayo1", der, PrivateKeyInfo, mayo1),
 DECODER_w_structure("mayo1", der, SubjectPublicKeyInfo, mayo1),DECODER_w_structure("p256_mayo1", der, PrivateKeyInfo, p256_mayo1),
-DECODER_w_structure("p256_mayo1", der, SubjectPublicKeyInfo, p256_mayo1),
+DECODER_w_structure("p256_mayo1", der, SubjectPublicKeyInfo, p256_mayo1),DECODER_w_structure("rsa3072_mayo1", der, PrivateKeyInfo, rsa3072_mayo1),
+DECODER_w_structure("rsa3072_mayo1", der, SubjectPublicKeyInfo, rsa3072_mayo1),
 #endif
 #ifdef OQS_ENABLE_SIG_mayo_2
 DECODER_w_structure("mayo2", der, PrivateKeyInfo, mayo2),
 DECODER_w_structure("mayo2", der, SubjectPublicKeyInfo, mayo2),DECODER_w_structure("p256_mayo2", der, PrivateKeyInfo, p256_mayo2),
-DECODER_w_structure("p256_mayo2", der, SubjectPublicKeyInfo, p256_mayo2),
+DECODER_w_structure("p256_mayo2", der, SubjectPublicKeyInfo, p256_mayo2),DECODER_w_structure("rsa3072_mayo2", der, PrivateKeyInfo, rsa3072_mayo2),
+DECODER_w_structure("rsa3072_mayo2", der, SubjectPublicKeyInfo, rsa3072_mayo2),
 #endif
 #ifdef OQS_ENABLE_SIG_mayo_3
 DECODER_w_structure("mayo3", der, PrivateKeyInfo, mayo3),
 DECODER_w_structure("mayo3", der, SubjectPublicKeyInfo, mayo3),DECODER_w_structure("p384_mayo3", der, PrivateKeyInfo, p384_mayo3),
-DECODER_w_structure("p384_mayo3", der, SubjectPublicKeyInfo, p384_mayo3),
+DECODER_w_structure("p384_mayo3", der, SubjectPublicKeyInfo, p384_mayo3),DECODER_w_structure("rsa7680_mayo3", der, PrivateKeyInfo, rsa7680_mayo3),
+DECODER_w_structure("rsa7680_mayo3", der, SubjectPublicKeyInfo, rsa7680_mayo3),
 #endif
 #ifdef OQS_ENABLE_SIG_mayo_5
 DECODER_w_structure("mayo5", der, PrivateKeyInfo, mayo5),
 DECODER_w_structure("mayo5", der, SubjectPublicKeyInfo, mayo5),DECODER_w_structure("p521_mayo5", der, PrivateKeyInfo, p521_mayo5),
-DECODER_w_structure("p521_mayo5", der, SubjectPublicKeyInfo, p521_mayo5),
+DECODER_w_structure("p521_mayo5", der, SubjectPublicKeyInfo, p521_mayo5),DECODER_w_structure("rsa15360_mayo5", der, PrivateKeyInfo, rsa15360_mayo5),
+DECODER_w_structure("rsa15360_mayo5", der, SubjectPublicKeyInfo, rsa15360_mayo5),
 #endif
 #ifdef OQS_ENABLE_SIG_cross_rsdp_128_balanced
 DECODER_w_structure("CROSSrsdp128balanced", der, PrivateKeyInfo, CROSSrsdp128balanced),
@@ -309,22 +316,26 @@ DECODER_w_structure("CROSSrsdp192fast", der, SubjectPublicKeyInfo, CROSSrsdp192f
 #ifdef OQS_ENABLE_SIG_uov_ov_Is_pkc
 DECODER_w_structure("OV_Is_pkc", der, PrivateKeyInfo, OV_Is_pkc),
 DECODER_w_structure("OV_Is_pkc", der, SubjectPublicKeyInfo, OV_Is_pkc),DECODER_w_structure("p256_OV_Is_pkc", der, PrivateKeyInfo, p256_OV_Is_pkc),
-DECODER_w_structure("p256_OV_Is_pkc", der, SubjectPublicKeyInfo, p256_OV_Is_pkc),
+DECODER_w_structure("p256_OV_Is_pkc", der, SubjectPublicKeyInfo, p256_OV_Is_pkc),DECODER_w_structure("rsa3072_OV_Is_pkc", der, PrivateKeyInfo, rsa3072_OV_Is_pkc),
+DECODER_w_structure("rsa3072_OV_Is_pkc", der, SubjectPublicKeyInfo, rsa3072_OV_Is_pkc),
 #endif
 #ifdef OQS_ENABLE_SIG_uov_ov_Ip_pkc
 DECODER_w_structure("OV_Ip_pkc", der, PrivateKeyInfo, OV_Ip_pkc),
 DECODER_w_structure("OV_Ip_pkc", der, SubjectPublicKeyInfo, OV_Ip_pkc),DECODER_w_structure("p256_OV_Ip_pkc", der, PrivateKeyInfo, p256_OV_Ip_pkc),
-DECODER_w_structure("p256_OV_Ip_pkc", der, SubjectPublicKeyInfo, p256_OV_Ip_pkc),
+DECODER_w_structure("p256_OV_Ip_pkc", der, SubjectPublicKeyInfo, p256_OV_Ip_pkc),DECODER_w_structure("rsa3072_OV_Ip_pkc", der, PrivateKeyInfo, rsa3072_OV_Ip_pkc),
+DECODER_w_structure("rsa3072_OV_Ip_pkc", der, SubjectPublicKeyInfo, rsa3072_OV_Ip_pkc),
 #endif
 #ifdef OQS_ENABLE_SIG_uov_ov_III_pkc
 DECODER_w_structure("OV_III_pkc", der, PrivateKeyInfo, OV_III_pkc),
 DECODER_w_structure("OV_III_pkc", der, SubjectPublicKeyInfo, OV_III_pkc),DECODER_w_structure("p384_OV_III_pkc", der, PrivateKeyInfo, p384_OV_III_pkc),
-DECODER_w_structure("p384_OV_III_pkc", der, SubjectPublicKeyInfo, p384_OV_III_pkc),
+DECODER_w_structure("p384_OV_III_pkc", der, SubjectPublicKeyInfo, p384_OV_III_pkc),DECODER_w_structure("rsa7680_OV_III_pkc", der, PrivateKeyInfo, rsa7680_OV_III_pkc),
+DECODER_w_structure("rsa7680_OV_III_pkc", der, SubjectPublicKeyInfo, rsa7680_OV_III_pkc),
 #endif
 #ifdef OQS_ENABLE_SIG_uov_ov_V_pkc
 DECODER_w_structure("OV_V_pkc", der, PrivateKeyInfo, OV_V_pkc),
 DECODER_w_structure("OV_V_pkc", der, SubjectPublicKeyInfo, OV_V_pkc),DECODER_w_structure("p521_OV_V_pkc", der, PrivateKeyInfo, p521_OV_V_pkc),
-DECODER_w_structure("p521_OV_V_pkc", der, SubjectPublicKeyInfo, p521_OV_V_pkc),
+DECODER_w_structure("p521_OV_V_pkc", der, SubjectPublicKeyInfo, p521_OV_V_pkc),DECODER_w_structure("rsa15360_OV_V_pkc", der, PrivateKeyInfo, rsa15360_OV_V_pkc),
+DECODER_w_structure("rsa15360_OV_V_pkc", der, SubjectPublicKeyInfo, rsa15360_OV_V_pkc),
 #endif
 #ifdef OQS_ENABLE_SIG_uov_ov_Is_pkc_skc
 DECODER_w_structure("OV_Is_pkc_skc", der, PrivateKeyInfo, OV_Is_pkc_skc),
@@ -349,7 +360,8 @@ DECODER_w_structure("p521_OV_V_pkc_skc", der, SubjectPublicKeyInfo, p521_OV_V_pk
 #ifdef OQS_ENABLE_SIG_snova_SNOVA_24_5_4
 DECODER_w_structure("snova2454", der, PrivateKeyInfo, snova2454),
 DECODER_w_structure("snova2454", der, SubjectPublicKeyInfo, snova2454),DECODER_w_structure("p256_snova2454", der, PrivateKeyInfo, p256_snova2454),
-DECODER_w_structure("p256_snova2454", der, SubjectPublicKeyInfo, p256_snova2454),
+DECODER_w_structure("p256_snova2454", der, SubjectPublicKeyInfo, p256_snova2454),DECODER_w_structure("rsa3072_snova2454", der, PrivateKeyInfo, rsa3072_snova2454),
+DECODER_w_structure("rsa3072_snova2454", der, SubjectPublicKeyInfo, rsa3072_snova2454),
 #endif
 #ifdef OQS_ENABLE_SIG_snova_SNOVA_24_5_4_esk
 DECODER_w_structure("snova2454esk", der, PrivateKeyInfo, snova2454esk),
@@ -359,41 +371,56 @@ DECODER_w_structure("p256_snova2454esk", der, SubjectPublicKeyInfo, p256_snova24
 #ifdef OQS_ENABLE_SIG_snova_SNOVA_37_17_2
 DECODER_w_structure("snova37172", der, PrivateKeyInfo, snova37172),
 DECODER_w_structure("snova37172", der, SubjectPublicKeyInfo, snova37172),DECODER_w_structure("p256_snova37172", der, PrivateKeyInfo, p256_snova37172),
-DECODER_w_structure("p256_snova37172", der, SubjectPublicKeyInfo, p256_snova37172),
+DECODER_w_structure("p256_snova37172", der, SubjectPublicKeyInfo, p256_snova37172),DECODER_w_structure("rsa3072_snova37172", der, PrivateKeyInfo, rsa3072_snova37172),
+DECODER_w_structure("rsa3072_snova37172", der, SubjectPublicKeyInfo, rsa3072_snova37172),
 #endif
 #ifdef OQS_ENABLE_SIG_snova_SNOVA_24_5_5
 DECODER_w_structure("snova2455", der, PrivateKeyInfo, snova2455),
 DECODER_w_structure("snova2455", der, SubjectPublicKeyInfo, snova2455),DECODER_w_structure("p384_snova2455", der, PrivateKeyInfo, p384_snova2455),
-DECODER_w_structure("p384_snova2455", der, SubjectPublicKeyInfo, p384_snova2455),
+DECODER_w_structure("p384_snova2455", der, SubjectPublicKeyInfo, p384_snova2455),DECODER_w_structure("rsa7680_snova2455", der, PrivateKeyInfo, rsa7680_snova2455),
+DECODER_w_structure("rsa7680_snova2455", der, SubjectPublicKeyInfo, rsa7680_snova2455),
 #endif
 #ifdef OQS_ENABLE_SIG_snova_SNOVA_29_6_5
 DECODER_w_structure("snova2965", der, PrivateKeyInfo, snova2965),
 DECODER_w_structure("snova2965", der, SubjectPublicKeyInfo, snova2965),DECODER_w_structure("p521_snova2965", der, PrivateKeyInfo, p521_snova2965),
-DECODER_w_structure("p521_snova2965", der, SubjectPublicKeyInfo, p521_snova2965),
+DECODER_w_structure("p521_snova2965", der, SubjectPublicKeyInfo, p521_snova2965),DECODER_w_structure("rsa15360_snova2965", der, PrivateKeyInfo, rsa15360_snova2965),
+DECODER_w_structure("rsa15360_snova2965", der, SubjectPublicKeyInfo, rsa15360_snova2965),
 #endif
 #ifdef OQS_ENABLE_SIG_slh_dsa_pure_sha2_128s
 DECODER_w_structure("slhdsasha2128s", der, PrivateKeyInfo, slhdsasha2128s),
-DECODER_w_structure("slhdsasha2128s", der, SubjectPublicKeyInfo, slhdsasha2128s),
+DECODER_w_structure("slhdsasha2128s", der, SubjectPublicKeyInfo, slhdsasha2128s),DECODER_w_structure("p256_slhdsasha2128s", der, PrivateKeyInfo, p256_slhdsasha2128s),
+DECODER_w_structure("p256_slhdsasha2128s", der, SubjectPublicKeyInfo, p256_slhdsasha2128s),DECODER_w_structure("rsa3072_slhdsasha2128s", der, PrivateKeyInfo, rsa3072_slhdsasha2128s),
+DECODER_w_structure("rsa3072_slhdsasha2128s", der, SubjectPublicKeyInfo, rsa3072_slhdsasha2128s),
 #endif
 #ifdef OQS_ENABLE_SIG_slh_dsa_pure_sha2_128f
 DECODER_w_structure("slhdsasha2128f", der, PrivateKeyInfo, slhdsasha2128f),
-DECODER_w_structure("slhdsasha2128f", der, SubjectPublicKeyInfo, slhdsasha2128f),
+DECODER_w_structure("slhdsasha2128f", der, SubjectPublicKeyInfo, slhdsasha2128f),DECODER_w_structure("p256_slhdsasha2128f", der, PrivateKeyInfo, p256_slhdsasha2128f),
+DECODER_w_structure("p256_slhdsasha2128f", der, SubjectPublicKeyInfo, p256_slhdsasha2128f),DECODER_w_structure("rsa3072_slhdsasha2128f", der, PrivateKeyInfo, rsa3072_slhdsasha2128f),
+DECODER_w_structure("rsa3072_slhdsasha2128f", der, SubjectPublicKeyInfo, rsa3072_slhdsasha2128f),
 #endif
 #ifdef OQS_ENABLE_SIG_slh_dsa_pure_sha2_192s
 DECODER_w_structure("slhdsasha2192s", der, PrivateKeyInfo, slhdsasha2192s),
-DECODER_w_structure("slhdsasha2192s", der, SubjectPublicKeyInfo, slhdsasha2192s),
+DECODER_w_structure("slhdsasha2192s", der, SubjectPublicKeyInfo, slhdsasha2192s),DECODER_w_structure("p384_slhdsasha2192s", der, PrivateKeyInfo, p384_slhdsasha2192s),
+DECODER_w_structure("p384_slhdsasha2192s", der, SubjectPublicKeyInfo, p384_slhdsasha2192s),DECODER_w_structure("rsa7680_slhdsasha2192s", der, PrivateKeyInfo, rsa7680_slhdsasha2192s),
+DECODER_w_structure("rsa7680_slhdsasha2192s", der, SubjectPublicKeyInfo, rsa7680_slhdsasha2192s),
 #endif
 #ifdef OQS_ENABLE_SIG_slh_dsa_pure_sha2_192f
 DECODER_w_structure("slhdsasha2192f", der, PrivateKeyInfo, slhdsasha2192f),
-DECODER_w_structure("slhdsasha2192f", der, SubjectPublicKeyInfo, slhdsasha2192f),
+DECODER_w_structure("slhdsasha2192f", der, SubjectPublicKeyInfo, slhdsasha2192f),DECODER_w_structure("p384_slhdsasha2192f", der, PrivateKeyInfo, p384_slhdsasha2192f),
+DECODER_w_structure("p384_slhdsasha2192f", der, SubjectPublicKeyInfo, p384_slhdsasha2192f),DECODER_w_structure("rsa7680_slhdsasha2192f", der, PrivateKeyInfo, rsa7680_slhdsasha2192f),
+DECODER_w_structure("rsa7680_slhdsasha2192f", der, SubjectPublicKeyInfo, rsa7680_slhdsasha2192f),
 #endif
 #ifdef OQS_ENABLE_SIG_slh_dsa_pure_sha2_256s
 DECODER_w_structure("slhdsasha2256s", der, PrivateKeyInfo, slhdsasha2256s),
-DECODER_w_structure("slhdsasha2256s", der, SubjectPublicKeyInfo, slhdsasha2256s),
+DECODER_w_structure("slhdsasha2256s", der, SubjectPublicKeyInfo, slhdsasha2256s),DECODER_w_structure("p521_slhdsasha2256s", der, PrivateKeyInfo, p521_slhdsasha2256s),
+DECODER_w_structure("p521_slhdsasha2256s", der, SubjectPublicKeyInfo, p521_slhdsasha2256s),DECODER_w_structure("rsa15360_slhdsasha2256s", der, PrivateKeyInfo, rsa15360_slhdsasha2256s),
+DECODER_w_structure("rsa15360_slhdsasha2256s", der, SubjectPublicKeyInfo, rsa15360_slhdsasha2256s),
 #endif
 #ifdef OQS_ENABLE_SIG_slh_dsa_pure_sha2_256f
 DECODER_w_structure("slhdsasha2256f", der, PrivateKeyInfo, slhdsasha2256f),
-DECODER_w_structure("slhdsasha2256f", der, SubjectPublicKeyInfo, slhdsasha2256f),
+DECODER_w_structure("slhdsasha2256f", der, SubjectPublicKeyInfo, slhdsasha2256f),DECODER_w_structure("p521_slhdsasha2256f", der, PrivateKeyInfo, p521_slhdsasha2256f),
+DECODER_w_structure("p521_slhdsasha2256f", der, SubjectPublicKeyInfo, p521_slhdsasha2256f),DECODER_w_structure("rsa15360_slhdsasha2256f", der, PrivateKeyInfo, rsa15360_slhdsasha2256f),
+DECODER_w_structure("rsa15360_slhdsasha2256f", der, SubjectPublicKeyInfo, rsa15360_slhdsasha2256f),
 #endif
 #ifdef OQS_ENABLE_SIG_slh_dsa_pure_shake_128s
 DECODER_w_structure("slhdsashake128s", der, PrivateKeyInfo, slhdsashake128s),
@@ -422,16 +449,55 @@ DECODER_w_structure("slhdsashake256f", der, SubjectPublicKeyInfo, slhdsashake256
 #ifdef OQS_ENABLE_SIG_mqom_mqom2_cat1_gf16_fast_r5
 DECODER_w_structure("mqom2cat1gf16fastr5", der, PrivateKeyInfo, mqom2cat1gf16fastr5),
 DECODER_w_structure("mqom2cat1gf16fastr5", der, SubjectPublicKeyInfo, mqom2cat1gf16fastr5),DECODER_w_structure("p256_mqom2cat1gf16fastr5", der, PrivateKeyInfo, p256_mqom2cat1gf16fastr5),
-DECODER_w_structure("p256_mqom2cat1gf16fastr5", der, SubjectPublicKeyInfo, p256_mqom2cat1gf16fastr5),
+DECODER_w_structure("p256_mqom2cat1gf16fastr5", der, SubjectPublicKeyInfo, p256_mqom2cat1gf16fastr5),DECODER_w_structure("rsa3072_mqom2cat1gf16fastr5", der, PrivateKeyInfo, rsa3072_mqom2cat1gf16fastr5),
+DECODER_w_structure("rsa3072_mqom2cat1gf16fastr5", der, SubjectPublicKeyInfo, rsa3072_mqom2cat1gf16fastr5),
 #endif
 #ifdef OQS_ENABLE_SIG_mqom_mqom2_cat3_gf16_fast_r5
 DECODER_w_structure("mqom2cat3gf16fastr5", der, PrivateKeyInfo, mqom2cat3gf16fastr5),
 DECODER_w_structure("mqom2cat3gf16fastr5", der, SubjectPublicKeyInfo, mqom2cat3gf16fastr5),DECODER_w_structure("p384_mqom2cat3gf16fastr5", der, PrivateKeyInfo, p384_mqom2cat3gf16fastr5),
-DECODER_w_structure("p384_mqom2cat3gf16fastr5", der, SubjectPublicKeyInfo, p384_mqom2cat3gf16fastr5),
+DECODER_w_structure("p384_mqom2cat3gf16fastr5", der, SubjectPublicKeyInfo, p384_mqom2cat3gf16fastr5),DECODER_w_structure("rsa7680_mqom2cat3gf16fastr5", der, PrivateKeyInfo, rsa7680_mqom2cat3gf16fastr5),
+DECODER_w_structure("rsa7680_mqom2cat3gf16fastr5", der, SubjectPublicKeyInfo, rsa7680_mqom2cat3gf16fastr5),
 #endif
 #ifdef OQS_ENABLE_SIG_mqom_mqom2_cat5_gf16_fast_r5
 DECODER_w_structure("mqom2cat5gf16fastr5", der, PrivateKeyInfo, mqom2cat5gf16fastr5),
 DECODER_w_structure("mqom2cat5gf16fastr5", der, SubjectPublicKeyInfo, mqom2cat5gf16fastr5),DECODER_w_structure("p521_mqom2cat5gf16fastr5", der, PrivateKeyInfo, p521_mqom2cat5gf16fastr5),
-DECODER_w_structure("p521_mqom2cat5gf16fastr5", der, SubjectPublicKeyInfo, p521_mqom2cat5gf16fastr5),
+DECODER_w_structure("p521_mqom2cat5gf16fastr5", der, SubjectPublicKeyInfo, p521_mqom2cat5gf16fastr5),DECODER_w_structure("rsa15360_mqom2cat5gf16fastr5", der, PrivateKeyInfo, rsa15360_mqom2cat5gf16fastr5),
+DECODER_w_structure("rsa15360_mqom2cat5gf16fastr5", der, SubjectPublicKeyInfo, rsa15360_mqom2cat5gf16fastr5),
+#endif
+#ifdef OQS_ENABLE_SIG_sdith_hypercube_cat1_gf256
+DECODER_w_structure("sdithhypercubecat1gf256", der, PrivateKeyInfo, sdithhypercubecat1gf256),
+DECODER_w_structure("sdithhypercubecat1gf256", der, SubjectPublicKeyInfo, sdithhypercubecat1gf256),DECODER_w_structure("p256_sdithhypercubecat1gf256", der, PrivateKeyInfo, p256_sdithhypercubecat1gf256),
+DECODER_w_structure("p256_sdithhypercubecat1gf256", der, SubjectPublicKeyInfo, p256_sdithhypercubecat1gf256),DECODER_w_structure("rsa3072_sdithhypercubecat1gf256", der, PrivateKeyInfo, rsa3072_sdithhypercubecat1gf256),
+DECODER_w_structure("rsa3072_sdithhypercubecat1gf256", der, SubjectPublicKeyInfo, rsa3072_sdithhypercubecat1gf256),
+#endif
+#ifdef OQS_ENABLE_SIG_sdith_hypercube_cat3_gf256
+DECODER_w_structure("sdithhypercubecat3gf256", der, PrivateKeyInfo, sdithhypercubecat3gf256),
+DECODER_w_structure("sdithhypercubecat3gf256", der, SubjectPublicKeyInfo, sdithhypercubecat3gf256),DECODER_w_structure("p384_sdithhypercubecat3gf256", der, PrivateKeyInfo, p384_sdithhypercubecat3gf256),
+DECODER_w_structure("p384_sdithhypercubecat3gf256", der, SubjectPublicKeyInfo, p384_sdithhypercubecat3gf256),DECODER_w_structure("rsa7680_sdithhypercubecat3gf256", der, PrivateKeyInfo, rsa7680_sdithhypercubecat3gf256),
+DECODER_w_structure("rsa7680_sdithhypercubecat3gf256", der, SubjectPublicKeyInfo, rsa7680_sdithhypercubecat3gf256),
+#endif
+#ifdef OQS_ENABLE_SIG_sdith_hypercube_cat5_gf256
+DECODER_w_structure("sdithhypercubecat5gf256", der, PrivateKeyInfo, sdithhypercubecat5gf256),
+DECODER_w_structure("sdithhypercubecat5gf256", der, SubjectPublicKeyInfo, sdithhypercubecat5gf256),DECODER_w_structure("p521_sdithhypercubecat5gf256", der, PrivateKeyInfo, p521_sdithhypercubecat5gf256),
+DECODER_w_structure("p521_sdithhypercubecat5gf256", der, SubjectPublicKeyInfo, p521_sdithhypercubecat5gf256),DECODER_w_structure("rsa15360_sdithhypercubecat5gf256", der, PrivateKeyInfo, rsa15360_sdithhypercubecat5gf256),
+DECODER_w_structure("rsa15360_sdithhypercubecat5gf256", der, SubjectPublicKeyInfo, rsa15360_sdithhypercubecat5gf256),
+#endif
+#ifdef OQS_ENABLE_SIG_sdith_threshold_cat1_gf256
+DECODER_w_structure("sdiththresholdcat1gf256", der, PrivateKeyInfo, sdiththresholdcat1gf256),
+DECODER_w_structure("sdiththresholdcat1gf256", der, SubjectPublicKeyInfo, sdiththresholdcat1gf256),DECODER_w_structure("p256_sdiththresholdcat1gf256", der, PrivateKeyInfo, p256_sdiththresholdcat1gf256),
+DECODER_w_structure("p256_sdiththresholdcat1gf256", der, SubjectPublicKeyInfo, p256_sdiththresholdcat1gf256),DECODER_w_structure("rsa3072_sdiththresholdcat1gf256", der, PrivateKeyInfo, rsa3072_sdiththresholdcat1gf256),
+DECODER_w_structure("rsa3072_sdiththresholdcat1gf256", der, SubjectPublicKeyInfo, rsa3072_sdiththresholdcat1gf256),
+#endif
+#ifdef OQS_ENABLE_SIG_sdith_threshold_cat3_gf256
+DECODER_w_structure("sdiththresholdcat3gf256", der, PrivateKeyInfo, sdiththresholdcat3gf256),
+DECODER_w_structure("sdiththresholdcat3gf256", der, SubjectPublicKeyInfo, sdiththresholdcat3gf256),DECODER_w_structure("p384_sdiththresholdcat3gf256", der, PrivateKeyInfo, p384_sdiththresholdcat3gf256),
+DECODER_w_structure("p384_sdiththresholdcat3gf256", der, SubjectPublicKeyInfo, p384_sdiththresholdcat3gf256),DECODER_w_structure("rsa7680_sdiththresholdcat3gf256", der, PrivateKeyInfo, rsa7680_sdiththresholdcat3gf256),
+DECODER_w_structure("rsa7680_sdiththresholdcat3gf256", der, SubjectPublicKeyInfo, rsa7680_sdiththresholdcat3gf256),
+#endif
+#ifdef OQS_ENABLE_SIG_sdith_threshold_cat5_gf256
+DECODER_w_structure("sdiththresholdcat5gf256", der, PrivateKeyInfo, sdiththresholdcat5gf256),
+DECODER_w_structure("sdiththresholdcat5gf256", der, SubjectPublicKeyInfo, sdiththresholdcat5gf256),DECODER_w_structure("p521_sdiththresholdcat5gf256", der, PrivateKeyInfo, p521_sdiththresholdcat5gf256),
+DECODER_w_structure("p521_sdiththresholdcat5gf256", der, SubjectPublicKeyInfo, p521_sdiththresholdcat5gf256),DECODER_w_structure("rsa15360_sdiththresholdcat5gf256", der, PrivateKeyInfo, rsa15360_sdiththresholdcat5gf256),
+DECODER_w_structure("rsa15360_sdiththresholdcat5gf256", der, SubjectPublicKeyInfo, rsa15360_sdiththresholdcat5gf256),
 #endif
 ///// OQS_TEMPLATE_FRAGMENT_MAKE_END

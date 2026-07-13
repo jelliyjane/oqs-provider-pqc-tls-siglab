@@ -969,8 +969,8 @@ sigs:
         enable: false
         enable_tls: true
       # RSDP 256
-      # CROSS variants rsdp-256-balanced and rsdp-256-fast are missing because 
-      # they produce certificates that are larger than the maximum size allowed 
+      # CROSS variants rsdp-256-balanced and rsdp-256-fast are missing because
+      # they produce certificates that are larger than the maximum size allowed
       # by TLS 1.3 (RFC 8446 section B.3.3)
       -
         name: 'CROSSrsdp256small'
@@ -1113,7 +1113,7 @@ sigs:
         oid: '1.3.9999.9.5.1'
         code_point: '0xff0e'
         enable: true
-        enable_tls: false
+        enable_tls: true
         mix_with: [{'name': 'p256',
                     'pretty_name': 'ECDSA p256',
                     'oid': '1.3.9999.9.5.2',
@@ -1613,3 +1613,60 @@ sigs:
                     'pretty_name': 'ECDSA p521',
                     'oid': '1.3.9999.11.5.8',
                     'code_point': '0xff7a'}]
+  -
+    family: 'SDitH'
+    variants:
+      -
+        name: 'sdithhypercubecat1gf256'
+        pretty_name: 'SDitH-hypercube-cat1-gf256'
+        oqs_meth: 'OQS_SIG_alg_sdith_hypercube_cat1_gf256'
+        oid: '1.3.9999.23.1.1'
+        code_point: '0xff86'
+        nist_level: 1
+        enable: true
+        enable_tls: true
+      -
+        name: 'sdithhypercubecat3gf256'
+        pretty_name: 'SDitH-hypercube-cat3-gf256'
+        oqs_meth: 'OQS_SIG_alg_sdith_hypercube_cat3_gf256'
+        oid: '1.3.9999.23.3.1'
+        code_point: '0xff87'
+        nist_level: 3
+        enable: true
+        enable_tls: true
+      -
+        name: 'sdithhypercubecat5gf256'
+        pretty_name: 'SDitH-hypercube-cat5-gf256'
+        oqs_meth: 'OQS_SIG_alg_sdith_hypercube_cat5_gf256'
+        oid: '1.3.9999.23.5.1'
+        code_point: '0xff88'
+        nist_level: 5
+        enable: true
+        enable_tls: true
+      -
+        name: 'sdiththresholdcat1gf256'
+        pretty_name: 'SDitH-threshold-cat1-gf256'
+        oqs_meth: 'OQS_SIG_alg_sdith_threshold_cat1_gf256'
+        oid: '1.3.9999.23.1.2'
+        code_point: '0xff89'
+        nist_level: 1
+        enable: true
+        enable_tls: true
+      -
+        name: 'sdiththresholdcat3gf256'
+        pretty_name: 'SDitH-threshold-cat3-gf256'
+        oqs_meth: 'OQS_SIG_alg_sdith_threshold_cat3_gf256'
+        oid: '1.3.9999.23.3.2'
+        code_point: '0xff8a'
+        nist_level: 3
+        enable: true
+        enable_tls: true
+      -
+        name: 'sdiththresholdcat5gf256'
+        pretty_name: 'SDitH-threshold-cat5-gf256'
+        oqs_meth: 'OQS_SIG_alg_sdith_threshold_cat5_gf256'
+        oid: '1.3.9999.23.5.2'
+        code_point: '0xff8b'
+        nist_level: 5
+        enable: true
+        enable_tls: true

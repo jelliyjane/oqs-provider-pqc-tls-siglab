@@ -42,17 +42,18 @@ This implementation makes available the following quantum safe algorithms:
 
 ### Signature algorithms
 
-- **FAEST**:`faest128s`, `faest128f`, `faest192s`, `faest192f`, `faest256s`, `faest256f`
-- **HAWK**:`hawk512`, `hawk1024`
-- **QR-UOV-round2**:`qruov1q7l10v740m100`, `qruov3q7l10v1100m140`, `qruov5q7l10v1490m190`
-- **ML-DSA**:`mldsa44`, `p256_mldsa44`, `rsa3072_mldsa44`, `mldsa65`, `p384_mldsa65`, `mldsa87`, `p521_mldsa87`
-- **Falcon**:`falcon512`, `p256_falcon512`, `rsa3072_falcon512`, `falconpadded512`, `p256_falconpadded512`, `rsa3072_falconpadded512`, `falcon1024`, `p521_falcon1024`, `falconpadded1024`, `p521_falconpadded1024`
-- **MAYO**:`mayo1`, `p256_mayo1`, `mayo2`, `p256_mayo2`, `mayo3`, `p384_mayo3`, `mayo5`, `p521_mayo5`
+- **FAEST**:`faest128s`, `p256_faest128s`, `rsa3072_faest128s`, `faest128f`, `p256_faest128f`, `rsa3072_faest128f`, `faest192s`, `p384_faest192s`, `rsa7680_faest192s`, `faest192f`, `p384_faest192f`, `rsa7680_faest192f`, `faest256s`, `p521_faest256s`, `rsa15360_faest256s`, `faest256f`, `p521_faest256f`, `rsa15360_faest256f`
+- **HAWK**:`hawk512`, `p256_hawk512`, `rsa3072_hawk512`, `hawk1024`, `p521_hawk1024`, `rsa15360_hawk1024`
+- **QR-UOV-round2**:`qruov1q7l10v740m100`, `p256_qruov1q7l10v740m100`, `rsa3072_qruov1q7l10v740m100`, `qruov3q7l10v1100m140`, `p384_qruov3q7l10v1100m140`, `rsa7680_qruov3q7l10v1100m140`, `qruov5q7l10v1490m190`, `p521_qruov5q7l10v1490m190`, `rsa15360_qruov5q7l10v1490m190`
+- **ML-DSA**:`mldsa44`, `p256_mldsa44`, `rsa3072_mldsa44`, `mldsa65`, `p384_mldsa65`, `rsa7680_mldsa65`, `mldsa87`, `p521_mldsa87`, `rsa15360_mldsa87`
+- **Falcon**:`falcon512`, `p256_falcon512`, `rsa3072_falcon512`, `falconpadded512`, `p256_falconpadded512`, `rsa3072_falconpadded512`, `falcon1024`, `p521_falcon1024`, `rsa15360_falcon1024`, `falconpadded1024`, `p521_falconpadded1024`
+- **MAYO**:`mayo1`, `p256_mayo1`, `rsa3072_mayo1`, `mayo2`, `p256_mayo2`, `rsa3072_mayo2`, `mayo3`, `p384_mayo3`, `rsa7680_mayo3`, `mayo5`, `p521_mayo5`, `rsa15360_mayo5`
 - **CROSS**:`CROSSrsdp128balanced`, `CROSSrsdp128fast`, `CROSSrsdp128small`, `CROSSrsdp192balanced`, `CROSSrsdp192fast`, `CROSSrsdp192small`\*, `CROSSrsdp256small`\*, `CROSSrsdpg128balanced`\*, `CROSSrsdpg128fast`\*, `CROSSrsdpg128small`\*, `CROSSrsdpg192balanced`\*, `CROSSrsdpg192fast`\*, `CROSSrsdpg192small`\*, `CROSSrsdpg256balanced`\*, `CROSSrsdpg256fast`\*, `CROSSrsdpg256small`\*
-- **UOV**:`OV_Is`\*, `p256_OV_Is`\*, `OV_Ip`\*, `p256_OV_Ip`\*, `OV_III`\*, `p384_OV_III`\*, `OV_V`\*\*, `p521_OV_V`\*\*, `OV_Is_pkc`\*\*, `p256_OV_Is_pkc`\*\*, `OV_Ip_pkc`, `p256_OV_Ip_pkc`, `OV_III_pkc`, `p384_OV_III_pkc`, `OV_V_pkc`, `p521_OV_V_pkc`, `OV_Is_pkc_skc`\*\*, `p256_OV_Is_pkc_skc`\*\*, `OV_Ip_pkc_skc`, `p256_OV_Ip_pkc_skc`, `OV_III_pkc_skc`, `p384_OV_III_pkc_skc`, `OV_V_pkc_skc`, `p521_OV_V_pkc_skc`
-- **SNOVA**:`snova2454`, `p256_snova2454`, `snova2454shake`\*\*, `p256_snova2454shake`\*\*, `snova2454esk`, `p256_snova2454esk`, `snova2454shakeesk`\*\*, `p256_snova2454shakeesk`\*\*, `snova37172`, `p256_snova37172`, `snova2583`\*\*, `p256_snova2583`\*\*, `snova56252`\*\*, `p384_snova56252`\*\*, `snova49113`\*\*, `p384_snova49113`\*\*, `snova3784`\*\*, `p384_snova3784`\*\*, `snova2455`, `p384_snova2455`, `snova60104`\*\*, `p521_snova60104`\*\*, `snova2965`, `p521_snova2965`
-- **SLH-DSA**:`slhdsasha2128s`, `slhdsasha2128f`, `slhdsasha2192s`, `slhdsasha2192f`, `slhdsasha2256s`, `slhdsasha2256f`, `slhdsashake128s`, `slhdsashake128f`, `slhdsashake192s`, `slhdsashake192f`, `slhdsashake256s`, `slhdsashake256f`
-- **MQOM**:`mqom2cat1gf16fastr5`, `p256_mqom2cat1gf16fastr5`, `mqom2cat1gf16fastr3`\*, `p256_mqom2cat1gf16fastr3`\*, `mqom2cat1gf16shortr5`\*, `p256_mqom2cat1gf16shortr5`\*, `mqom2cat1gf16shortr3`\*, `p256_mqom2cat1gf16shortr3`\*, `mqom2cat3gf16fastr5`, `p384_mqom2cat3gf16fastr5`, `mqom2cat3gf16fastr3`\*, `p384_mqom2cat3gf16fastr3`\*, `mqom2cat3gf16shortr5`\*, `p384_mqom2cat3gf16shortr5`\*, `mqom2cat3gf16shortr3`\*, `p384_mqom2cat3gf16shortr3`\*, `mqom2cat5gf16fastr5`, `p521_mqom2cat5gf16fastr5`, `mqom2cat5gf16fastr3`\*, `p521_mqom2cat5gf16fastr3`\*, `mqom2cat5gf16shortr5`\*, `p521_mqom2cat5gf16shortr5`\*, `mqom2cat5gf16shortr3`\*, `p521_mqom2cat5gf16shortr3`\*
+- **UOV**:`OV_Is`\*, `p256_OV_Is`\*, `OV_Ip`\*, `p256_OV_Ip`\*, `OV_III`\*, `p384_OV_III`\*, `OV_V`\*\*, `p521_OV_V`\*\*, `OV_Is_pkc`, `p256_OV_Is_pkc`, `rsa3072_OV_Is_pkc`, `OV_Ip_pkc`, `p256_OV_Ip_pkc`, `rsa3072_OV_Ip_pkc`, `OV_III_pkc`, `p384_OV_III_pkc`, `rsa7680_OV_III_pkc`, `OV_V_pkc`, `p521_OV_V_pkc`, `rsa15360_OV_V_pkc`, `OV_Is_pkc_skc`\*\*, `p256_OV_Is_pkc_skc`\*\*, `OV_Ip_pkc_skc`, `p256_OV_Ip_pkc_skc`, `OV_III_pkc_skc`, `p384_OV_III_pkc_skc`, `OV_V_pkc_skc`, `p521_OV_V_pkc_skc`
+- **SNOVA**:`snova2454`, `p256_snova2454`, `rsa3072_snova2454`, `snova2454shake`\*\*, `p256_snova2454shake`\*\*, `snova2454esk`, `p256_snova2454esk`, `snova2454shakeesk`\*\*, `p256_snova2454shakeesk`\*\*, `snova37172`, `p256_snova37172`, `rsa3072_snova37172`, `snova2583`\*\*, `p256_snova2583`\*\*, `snova56252`\*\*, `p384_snova56252`\*\*, `snova49113`\*\*, `p384_snova49113`\*\*, `snova3784`\*\*, `p384_snova3784`\*\*, `snova2455`, `p384_snova2455`, `rsa7680_snova2455`, `snova60104`\*\*, `p521_snova60104`\*\*, `snova2965`, `p521_snova2965`, `rsa15360_snova2965`
+- **SLH-DSA**:`slhdsasha2128s`, `p256_slhdsasha2128s`, `rsa3072_slhdsasha2128s`, `slhdsasha2128f`, `p256_slhdsasha2128f`, `rsa3072_slhdsasha2128f`, `slhdsasha2192s`, `p384_slhdsasha2192s`, `rsa7680_slhdsasha2192s`, `slhdsasha2192f`, `p384_slhdsasha2192f`, `rsa7680_slhdsasha2192f`, `slhdsasha2256s`, `p521_slhdsasha2256s`, `rsa15360_slhdsasha2256s`, `slhdsasha2256f`, `p521_slhdsasha2256f`, `rsa15360_slhdsasha2256f`, `slhdsashake128s`, `slhdsashake128f`, `slhdsashake192s`, `slhdsashake192f`, `slhdsashake256s`, `slhdsashake256f`
+- **MQOM**:`mqom2cat1gf16fastr5`, `p256_mqom2cat1gf16fastr5`, `rsa3072_mqom2cat1gf16fastr5`, `mqom2cat1gf16fastr3`\*, `p256_mqom2cat1gf16fastr3`\*, `mqom2cat1gf16shortr5`\*, `p256_mqom2cat1gf16shortr5`\*, `mqom2cat1gf16shortr3`\*, `p256_mqom2cat1gf16shortr3`\*, `mqom2cat3gf16fastr5`, `p384_mqom2cat3gf16fastr5`, `rsa7680_mqom2cat3gf16fastr5`, `mqom2cat3gf16fastr3`\*, `p384_mqom2cat3gf16fastr3`\*, `mqom2cat3gf16shortr5`\*, `p384_mqom2cat3gf16shortr5`\*, `mqom2cat3gf16shortr3`\*, `p384_mqom2cat3gf16shortr3`\*, `mqom2cat5gf16fastr5`, `p521_mqom2cat5gf16fastr5`, `rsa15360_mqom2cat5gf16fastr5`, `mqom2cat5gf16fastr3`\*, `p521_mqom2cat5gf16fastr3`\*, `mqom2cat5gf16shortr5`\*, `p521_mqom2cat5gf16shortr5`\*, `mqom2cat5gf16shortr3`\*, `p521_mqom2cat5gf16shortr3`\*
+- **SDitH**:`sdithhypercubecat1gf256`, `p256_sdithhypercubecat1gf256`, `rsa3072_sdithhypercubecat1gf256`, `sdithhypercubecat3gf256`, `p384_sdithhypercubecat3gf256`, `rsa7680_sdithhypercubecat3gf256`, `sdithhypercubecat5gf256`, `p521_sdithhypercubecat5gf256`, `rsa15360_sdithhypercubecat5gf256`, `sdiththresholdcat1gf256`, `p256_sdiththresholdcat1gf256`, `rsa3072_sdiththresholdcat1gf256`, `sdiththresholdcat3gf256`, `p384_sdiththresholdcat3gf256`, `rsa7680_sdiththresholdcat3gf256`, `sdiththresholdcat5gf256`, `p521_sdiththresholdcat5gf256`, `rsa15360_sdiththresholdcat5gf256`
 
 <!--- OQS_TEMPLATE_FRAGMENT_ALGS_END -->
 
@@ -69,7 +70,7 @@ The above algorithms that ARE denoted with "\*" ARE NOT enabled for
 TLS operations; this [can be changed by modifying the
 "enabled" flags in the main algorithm configuration file](CONFIGURE.md#pre-build-configuration). The above algorithms that ARE denoted with "\*\*" ARE NOT enabled; this cannot be changed as these algorithms are incompatible with with [RFC 8446](https://datatracker.ietf.org/doc/html/rfc8446).
 
-In order to support parallel use of classic and quantum-safe cryptography 
+In order to support parallel use of classic and quantum-safe cryptography
 this provider also provides different hybrid algorithms, combining classic
 and quantum-safe methods.
 There are two types of combinations:
@@ -79,7 +80,7 @@ A full list of algorithms, their interoperability code points and OIDs as well
 as a method to dynamically adapt them, e.g., for interoperability testing are
 documented in [ALGORITHMS.md](ALGORITHMS.md).
 
-## Using with OpenSSL >= 3.5.0 
+## Using with OpenSSL >= 3.5.0
 
 OpenSSL version 3.5.0 adds native support for the standardized PQ algorithm families MLKEM, MLDSA, SLHDSA as well as support for standardized hybrid PQ schemes.
 
@@ -87,7 +88,7 @@ As these code bases are substantially more advanced and better maintained than t
 available via `oqsprovider` these algorithm families get disabled when running in `openssl` versions
 already containing them in the default provider.
 
-The new OpenSSL implementations can be be used in such a oqsprovider configuration (OpenSSL >= 3.5.0 and oqsprovider >= 0.9.0) by accessing them through the following algorithm IDs: 
+The new OpenSSL implementations can be be used in such a oqsprovider configuration (OpenSSL >= 3.5.0 and oqsprovider >= 0.9.0) by accessing them through the following algorithm IDs:
 
 -**ML-DSA**:
 ```
@@ -96,7 +97,7 @@ The new OpenSSL implementations can be be used in such a oqsprovider configurati
 2.16.840.1.101.3.4.3.19, id-ml-dsa-87, ML-DSA-87, MLDSA87
 ```
 
--**ML_KEM**: 
+-**ML_KEM**:
 ```
 2.16.840.1.101.3.4.4.1, id-alg-ml-kem-512, ML-KEM-512, MLKEM512
 2.16.840.1.101.3.4.4.2, id-alg-ml-kem-768, ML-KEM-768, MLKEM768
@@ -147,7 +148,7 @@ for details.
 ## Basic steps
 
     cmake -S . -B _build && cmake --build _build && ctest --test-dir _build && cmake --install _build
-    
+
 Using
 -----
 

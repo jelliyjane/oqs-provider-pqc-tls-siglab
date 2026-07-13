@@ -11,6 +11,111 @@ import yaml
 
 kemoidcnt=0
 
+# Contextual TLS experiment set. Each pure-PQC signature gets one ECDSA and
+# one RSA composite at the same classical security strength. The private-use
+# TLS slots 0xFE20..0xFE75 are reserved by position for this experiment; slots
+# belonging to composites already defined in generate.yml remain unused.
+EXPERIMENT_COMPOSITE_SIGS = [
+    ('mldsa44', 2), ('mldsa65', 3), ('mldsa87', 5),
+    ('falcon512', 1), ('falcon1024', 5),
+    ('mayo1', 1), ('mayo2', 1), ('mayo3', 3), ('mayo5', 5),
+    ('OV_Is_pkc', 1), ('OV_Ip_pkc', 1), ('OV_III_pkc', 3),
+    ('OV_V_pkc', 5),
+    ('snova2454', 1), ('snova37172', 1), ('snova2455', 3),
+    ('snova2965', 5),
+    ('slhdsasha2128s', 1), ('slhdsasha2128f', 1),
+    ('slhdsasha2192s', 3), ('slhdsasha2192f', 3),
+    ('slhdsasha2256s', 5), ('slhdsasha2256f', 5),
+    ('mqom2cat1gf16fastr5', 1), ('mqom2cat3gf16fastr5', 3),
+    ('mqom2cat5gf16fastr5', 5),
+    ('faest128s', 1), ('faest128f', 1), ('faest192s', 3),
+    ('faest192f', 3), ('faest256s', 5), ('faest256f', 5),
+    ('hawk512', 1), ('hawk1024', 5),
+    ('qruov1q7l10v740m100', 1), ('qruov3q7l10v1100m140', 3),
+    ('qruov5q7l10v1490m190', 5),
+    ('sdithhypercubecat1gf256', 1), ('sdithhypercubecat3gf256', 3),
+    ('sdithhypercubecat5gf256', 5), ('sdiththresholdcat1gf256', 1),
+    ('sdiththresholdcat3gf256', 3), ('sdiththresholdcat5gf256', 5),
+]
+
+EXPERIMENT_CLASSICAL_COMPONENTS = {
+    1: (('p256', 'ECDSA p256'), ('rsa3072', 'RSA3072')),
+    2: (('p256', 'ECDSA p256'), ('rsa3072', 'RSA3072')),
+    3: (('p384', 'ECDSA p384'), ('rsa7680', 'RSA7680')),
+    5: (('p521', 'ECDSA p521'), ('rsa15360', 'RSA15360')),
+}
+
+
+def add_experiment_composites(config):
+    variants = {
+        variant['name']: variant
+        for family in config['sigs']
+        for variant in family['variants']
+    }
+    missing = [name for name, _ in EXPERIMENT_COMPOSITE_SIGS
+               if name not in variants]
+    if missing:
+        raise ValueError('Missing experiment signature variants: ' +
+                         ', '.join(missing))
+
+    used_code_points = set()
+    used_oids = set()
+
+    def collect_identifiers(value):
+        if isinstance(value, dict):
+            if value.get('code_point') is not None:
+                used_code_points.add(int(str(value['code_point']), 0))
+            if value.get('oid') is not None:
+                used_oids.add(str(value['oid']))
+            for child in value.values():
+                collect_identifiers(child)
+        elif isinstance(value, list):
+            for child in value:
+                collect_identifiers(child)
+
+    collect_identifiers(config['sigs'])
+    manifest = []
+    for index, (name, nist_level) in enumerate(EXPERIMENT_COMPOSITE_SIGS):
+        variant = variants[name]
+        mixes = variant.setdefault('mix_with', [])
+        by_name = {mix['name']: mix for mix in mixes}
+        for component_index, (classical_name, pretty_name) in enumerate(
+                EXPERIMENT_CLASSICAL_COMPONENTS[nist_level]):
+            composite_name = '{}_{}'.format(classical_name, name)
+            if classical_name not in by_name:
+                code_point = 0xFE20 + (index * 2) + component_index
+                oid = '1.3.9999.30.{}.{}'.format(index + 1,
+                                                 component_index + 1)
+                if code_point in used_code_points:
+                    raise ValueError('Composite TLS code point collision: ' +
+                                     hex(code_point))
+                if oid in used_oids:
+                    raise ValueError('Composite OID collision: ' + oid)
+                mix = {
+                    'name': classical_name,
+                    'pretty_name': pretty_name,
+                    'oid': oid,
+                    'code_point': hex(code_point),
+                }
+                mixes.append(mix)
+                by_name[classical_name] = mix
+                used_code_points.add(code_point)
+                used_oids.add(oid)
+            mix = by_name[classical_name]
+            manifest.append({
+                'pqc': name,
+                'nist_level': nist_level,
+                'classical': classical_name,
+                'composite': composite_name,
+                'oid': str(mix['oid']),
+                'code_point': str(mix['code_point']),
+            })
+
+    if len(manifest) != len(EXPERIMENT_COMPOSITE_SIGS) * 2:
+        raise ValueError('Expected 86 experiment composite signatures')
+    config['experiment_composites'] = manifest
+    return config
+
 # For files generated, the copyright message can be adapted
 # see https://github.com/open-quantum-safe/oqs-provider/issues/2#issuecomment-920904048
 # SPDX message to be leading, OpenSSL Copyright notice to be deleted
@@ -58,6 +163,8 @@ def get_kem_nistlevel(alg):
     return None
 
 def get_sig_nistlevel(family, alg):
+    if 'nist_level' in alg:
+        return int(alg['nist_level'])
     if 'LIBOQS_SRC_DIR' not in os.environ:
         print("Must include LIBOQS_SRC_DIR in environment")
         exit(1)
@@ -257,6 +364,12 @@ def validate_iana_code_points(config):
 
 # extend config with "hybrid_groups" array:
 config = load_config() # extend config with "hybrid_groups" array
+config = add_experiment_composites(config)
+file_put_contents(
+    os.path.join('oqs-template', 'composite-experiment.yml'),
+    yaml.safe_dump({'composites': config['experiment_composites']},
+                   sort_keys=False),
+    encoding='utf-8')
 
 # complete config with "bit_security" and "hybrid_group from
 # nid_hybrid information
@@ -277,6 +390,7 @@ populate('scripts/common.py', config, '#####')
 populate('test/test_common.c', config, '/////')
 
 config2 = load_config(include_disabled_sigs=True)
+config2 = add_experiment_composites(config2)
 config2 = complete_config(config2)
 
 populate('ALGORITHMS.md', config2, '<!---')
