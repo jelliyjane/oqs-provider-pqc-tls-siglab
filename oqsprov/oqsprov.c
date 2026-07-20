@@ -1641,42 +1641,42 @@ int OQS_PROVIDER_ENTRYPOINT_NAME(const OSSL_CORE_HANDLE *handle,
 
 
 
-    if (strcmp("3.5.0", ossl_versionp) <= 0) {
+    if (0 && strcmp("3.5.0", ossl_versionp) <= 0) {
         rt_algo_filter_enabled = 1;
         sk_OPENSSL_STRING_push(rt_disabled_algs, "slhdsasha2128s");
     }
 
 
 
-    if (strcmp("3.5.0", ossl_versionp) <= 0) {
+    if (0 && strcmp("3.5.0", ossl_versionp) <= 0) {
         rt_algo_filter_enabled = 1;
         sk_OPENSSL_STRING_push(rt_disabled_algs, "slhdsasha2128f");
     }
 
 
 
-    if (strcmp("3.5.0", ossl_versionp) <= 0) {
+    if (0 && strcmp("3.5.0", ossl_versionp) <= 0) {
         rt_algo_filter_enabled = 1;
         sk_OPENSSL_STRING_push(rt_disabled_algs, "slhdsasha2192s");
     }
 
 
 
-    if (strcmp("3.5.0", ossl_versionp) <= 0) {
+    if (0 && strcmp("3.5.0", ossl_versionp) <= 0) {
         rt_algo_filter_enabled = 1;
         sk_OPENSSL_STRING_push(rt_disabled_algs, "slhdsasha2192f");
     }
 
 
 
-    if (strcmp("3.5.0", ossl_versionp) <= 0) {
+    if (0 && strcmp("3.5.0", ossl_versionp) <= 0) {
         rt_algo_filter_enabled = 1;
         sk_OPENSSL_STRING_push(rt_disabled_algs, "slhdsasha2256s");
     }
 
 
 
-    if (strcmp("3.5.0", ossl_versionp) <= 0) {
+    if (0 && strcmp("3.5.0", ossl_versionp) <= 0) {
         rt_algo_filter_enabled = 1;
         sk_OPENSSL_STRING_push(rt_disabled_algs, "slhdsasha2256f");
     }
