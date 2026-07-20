@@ -44,10 +44,9 @@ NULL, "{% if 'standard_name' in hybrid %}{{hybrid['standard_name']}}{% else %}{{
 
 {% for sig in config['sigs'] %}
     {%- for variant in sig['variants'] %}
-"{{ variant['oid'] }}", "{{ variant['name'] }}",
+"{{ variant.get('provider_oid', variant['oid']) }}", "{{ variant['name'] }}",
         {%- for classical_alg in variant['mix_with'] %}
 "{{ classical_alg['oid'] }}" , "{{ classical_alg['name'] }}_{{ variant['name'] }}",
         {%- endfor %}
     {%- endfor %}
 {%- endfor %}
-
